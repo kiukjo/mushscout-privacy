@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elimina Account — MushScout</title>
+  <style>
+    :root {
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --red: #dc2626;
+      --red-light: #fee2e2;
+      --text: #1a2e1a;
+      --muted: #5a7060;
+      --border: #d1e7d4;
+      --bg: #f8fdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      background: linear-gradient(135deg, #0d2b1a, #1a4f2f);
+      color: white;
+      padding: 40px 24px 36px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+    .logo span { color: #4ade80; }
+    header p { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--red);
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 32px 0 10px;
+      color: var(--text);
+    }
+    p { margin-bottom: 14px; color: #2d3e2d; }
+    ul { margin: 8px 0 14px 20px; }
+    li { margin-bottom: 8px; color: #2d3e2d; }
+    .method {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin: 16px 0;
+    }
+    .method.primary {
+      border-color: var(--green);
+      border-width: 2px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .badge.fast { background: var(--green-light); color: var(--green); }
+    .badge.email { background: #dbeafe; color: #1d4ed8; }
+    .method h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .step-num {
+      min-width: 26px;
+      height: 26px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .warning {
+      background: var(--red-light);
+      border: 1px solid #fca5a5;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      color: #7f1d1d;
+    }
+    .warning strong { color: var(--red); }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .lang-btn {
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border-color: rgba(255,255,255,0.5);
+    }
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Mush<span>Scout</span></div>
+  <p>it.fungofind.app</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════ ITALIANO ═══════════════════ -->
+<div data-lang="it" class="visible">
+
+  <h1>🗑️ Elimina il tuo account</h1>
+  <p>Puoi eliminare il tuo account MushScout e tutti i dati associati in qualsiasi momento. L'eliminazione è <strong>definitiva e irreversibile</strong>.</p>
+
+  <div class="warning">
+    <strong>⚠️ Attenzione:</strong> L'eliminazione dell'account cancella permanentemente tutti i tuoi ritrovamenti, sessioni, foto, achievement e ogni altro dato personale. I dati non possono essere recuperati.
+  </div>
+
+  <h2>Metodo 1 — Direttamente dall'app (consigliato)</h2>
+
+  <div class="method primary">
+    <span class="badge fast">✅ Immediato</span>
+    <h3>Elimina dall'app MushScout</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>Apri MushScout sul tuo dispositivo</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>Vai su <strong>Profilo</strong> (icona in basso a destra)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>Scorri fino in fondo e tocca <strong>"Elimina account"</strong></div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>Conferma la tua scelta nella finestra di dialogo</div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div>Il tuo account e tutti i dati verranno eliminati immediatamente</div>
+    </div>
+  </div>
+
+  <h2>Metodo 2 — Richiesta via email</h2>
+
+  <div class="method">
+    <span class="badge email">📧 Entro 30 giorni</span>
+    <h3>Contatta il supporto</h3>
+    <p>Se non riesci ad accedere all'app, invia una email a:</p>
+    <p><a href="mailto:privacy@mushscout.app?subject=Richiesta%20eliminazione%20account&body=Ciao%2C%20vorrei%20eliminare%20il%20mio%20account%20MushScout.%0A%0AEmail%20account%3A%20">📧 privacy@mushscout.app</a></p>
+    <p>Specifica nell'email:</p>
+    <ul>
+      <li>L'indirizzo email associato al tuo account</li>
+      <li>La richiesta di eliminazione completa dei dati</li>
+    </ul>
+    <p>Elaboreremo la tua richiesta entro <strong>30 giorni</strong> dalla ricezione.</p>
+  </div>
+
+  <h2>Dati eliminati</h2>
+  <p>Con l'eliminazione dell'account vengono cancellati:</p>
+  <ul>
+    <li>Email, nome, foto profilo</li>
+    <li>Tutti i ritrovamenti di funghi e relative foto</li>
+    <li>Sessioni di raccolta e tracciati GPS</li>
+    <li>Achievement e statistiche</li>
+    <li>Dati di abbonamento Premium</li>
+  </ul>
+
+  <p>Per ulteriori informazioni consulta la nostra <a href="https://kiukjo.github.io/mushscout-privacy/">Privacy Policy</a>.</p>
+
+</div>
+
+<!-- ═══════════════════ ENGLISH ═══════════════════ -->
+<div data-lang="en">
+
+  <h1>🗑️ Delete your account</h1>
+  <p>You can delete your MushScout account and all associated data at any time. Deletion is <strong>permanent and irreversible</strong>.</p>
+
+  <div class="warning">
+    <strong>⚠️ Warning:</strong> Deleting your account permanently removes all your findings, sessions, photos, achievements and personal data. This cannot be undone.
+  </div>
+
+  <h2>Method 1 — Directly from the app (recommended)</h2>
+
+  <div class="method primary">
+    <span class="badge fast">✅ Immediate</span>
+    <h3>Delete from MushScout app</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>Open MushScout on your device</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>Go to <strong>Profile</strong> (bottom right icon)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>Scroll to the bottom and tap <strong>"Delete account"</strong></div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>Confirm your choice in the dialog</div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div>Your account and all data will be deleted immediately</div>
+    </div>
+  </div>
+
+  <h2>Method 2 — Email request</h2>
+
+  <div class="method">
+    <span class="badge email">📧 Within 30 days</span>
+    <h3>Contact support</h3>
+    <p>If you cannot access the app, send an email to:</p>
+    <p><a href="mailto:privacy@mushscout.app?subject=Account%20deletion%20request&body=Hi%2C%20I%20would%20like%20to%20delete%20my%20MushScout%20account.%0A%0AAccount%20email%3A%20">📧 privacy@mushscout.app</a></p>
+    <p>Please include:</p>
+    <ul>
+      <li>The email address associated with your account</li>
+      <li>A request for complete data deletion</li>
+    </ul>
+    <p>We will process your request within <strong>30 days</strong> of receipt.</p>
+  </div>
+
+  <h2>Data deleted</h2>
+  <p>Account deletion removes:</p>
+  <ul>
+    <li>Email, name, profile photo</li>
+    <li>All mushroom findings and related photos</li>
+    <li>Foraging sessions and GPS tracks</li>
+    <li>Achievements and statistics</li>
+    <li>Premium subscription data</li>
+  </ul>
+
+  <p>For more information, see our <a href="https://kiukjo.github.io/mushscout-privacy/">Privacy Policy</a>.</p>
+
+</div>
+
+</main>
+
+<footer>
+  MushScout · it.fungofind.app · Federico Biagioni · 2026
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.includes(lang === 'it' ? '🇮🇹' : '🇬🇧'));
+    });
+  }
+</script>
+</body>
+</html>
