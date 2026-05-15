@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MushScout</title>
+  <style>
+    :root {
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --text: #1a2e1a;
+      --muted: #5a7060;
+      --border: #d1e7d4;
+      --bg: #f8fdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      background: linear-gradient(135deg, #0d2b1a, #1a4f2f);
+      color: white;
+      padding: 40px 24px 36px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+    .logo span { color: #4ade80; }
+    header p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+    }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .lang-btn {
+      padding: 6px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border-color: rgba(255,255,255,0.5);
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    .updated {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { margin-bottom: 14px; color: #2d3e2d; }
+    ul, ol { margin: 8px 0 14px 20px; }
+    li { margin-bottom: 6px; color: #2d3e2d; }
+    strong { color: var(--text); }
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: var(--green);
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.875rem;
+    }
+    .service-card strong { display: block; margin-bottom: 2px; }
+    .service-card span { color: var(--muted); font-size: 0.8rem; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    /* Language sections */
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Mush<span>Scout</span></div>
+  <p>it.fungofind.app</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════ ITALIANO ═══════════════════ -->
+<div data-lang="it" class="visible">
+
+  <span class="updated">Ultimo aggiornamento: maggio 2025</span>
+
+  <h2>1. Titolare del trattamento</h2>
+  <p>
+    Il titolare del trattamento dei dati personali è <strong>Federico Biagioni</strong>,
+    sviluppatore dell'applicazione MushScout (<code>it.fungofind.app</code>).
+  </p>
+  <p>Per qualsiasi richiesta relativa alla privacy: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+
+  <h2>2. Dati raccolti e finalità</h2>
+  <p>MushScout raccoglie i seguenti dati personali:</p>
+
+  <div class="card">
+    <div class="card-title">📧 Dati di account</div>
+    <ul>
+      <li><strong>Indirizzo email</strong> — per registrazione e autenticazione</li>
+      <li><strong>Nome e cognome / username</strong> — per il profilo utente</li>
+      <li><strong>Foto profilo</strong> (opzionale) — caricata dall'utente</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Dati di localizzazione</div>
+    <ul>
+      <li><strong>Coordinate GPS precise</strong> — salvate per ogni ritrovamento di funghi</li>
+      <li><strong>Percorso GPS</strong> — tracciato durante le sessioni di raccolta</li>
+      <li>La localizzazione è utilizzata <em>solo</em> per le funzionalità principali dell'app e non viene condivisa con terzi a fini pubblicitari</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Foto e contenuti</div>
+    <ul>
+      <li><strong>Foto dei funghi</strong> — caricate volontariamente dall'utente, salvate su Cloudinary</li>
+      <li>Le foto vengono compresse prima del caricamento</li>
+      <li>Le foto non sono mai pubbliche di default</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Dati di utilizzo</div>
+    <ul>
+      <li>Numero di ritrovamenti, sessioni, achievement</li>
+      <li>Statistiche di utilizzo aggregate (non identificative)</li>
+      <li>Token dispositivo per notifiche push (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <h2>3. Base giuridica del trattamento</h2>
+  <ul>
+    <li><strong>Esecuzione del contratto</strong> (art. 6.1.b GDPR) — per fornire le funzionalità dell'app</li>
+    <li><strong>Consenso</strong> (art. 6.1.a GDPR) — per notifiche push e pubblicità personalizzata</li>
+    <li><strong>Interesse legittimo</strong> (art. 6.1.f GDPR) — per sicurezza e prevenzione abusi</li>
+  </ul>
+
+  <h2>4. Servizi di terze parti</h2>
+  <p>MushScout utilizza i seguenti servizi di terze parti, ciascuno con la propria privacy policy:</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Autenticazione, push notification</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Pubblicità (utenti free)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Accesso con account Google</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Identificazione specie da foto</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudinary</strong>
+      <span>Archiviazione foto</span><br>
+      <a href="https://cloudinary.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Dati meteo locali</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Hosting backend e database</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Tile mappe</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Privacy policy →</a>
+    </div>
+  </div>
+
+  <h2>5. Conservazione dei dati</h2>
+  <ul>
+    <li>I dati dell'account sono conservati finché l'account è attivo</li>
+    <li>In caso di eliminazione dell'account, tutti i dati personali vengono cancellati entro <strong>30 giorni</strong></li>
+    <li>I log tecnici anonimi possono essere conservati fino a 90 giorni</li>
+  </ul>
+
+  <h2>6. Trasferimento internazionale dei dati</h2>
+  <p>
+    Alcuni fornitori (Google, Cloudinary, Railway) possono trasferire dati al di fuori dell'UE.
+    Tali trasferimenti avvengono sulla base delle <strong>Clausole Contrattuali Standard</strong>
+    approvate dalla Commissione Europea o di meccanismi equivalenti.
+  </p>
+
+  <h2>7. Diritti dell'utente (GDPR)</h2>
+  <p>In quanto residente nell'UE, hai diritto a:</p>
+  <ul>
+    <li><strong>Accesso</strong> — ricevere una copia dei tuoi dati</li>
+    <li><strong>Rettifica</strong> — correggere dati inesatti</li>
+    <li><strong>Cancellazione</strong> — eliminare il tuo account e tutti i dati associati</li>
+    <li><strong>Portabilità</strong> — esportare i tuoi dati in formato JSON o CSV (disponibile dal profilo)</li>
+    <li><strong>Opposizione</strong> — opporti al trattamento per fini di marketing</li>
+    <li><strong>Revoca del consenso</strong> — in qualsiasi momento, senza pregiudicare il trattamento precedente</li>
+  </ul>
+  <p>Per esercitare questi diritti: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+  <p>Hai anche il diritto di presentare reclamo al <a href="https://www.garanteprivacy.it" target="_blank">Garante per la protezione dei dati personali</a>.</p>
+
+  <h2>8. Sicurezza</h2>
+  <p>
+    I dati sono trasmessi tramite connessioni HTTPS cifrate. Le password non vengono mai
+    salvate in chiaro. I dati sono archiviati su infrastrutture cloud con misure di sicurezza
+    standard del settore.
+  </p>
+
+  <h2>9. Minori</h2>
+  <p>
+    MushScout non è destinata a bambini di età inferiore a 13 anni. Non raccogliamo
+    consapevolmente dati di minori. Se sei un genitore e ritieni che tuo figlio abbia
+    creato un account, contattaci per la rimozione immediata.
+  </p>
+
+  <h2>10. Modifiche alla privacy policy</h2>
+  <p>
+    Eventuali modifiche saranno pubblicate su questa pagina con aggiornamento della data.
+    Per modifiche sostanziali, gli utenti registrati saranno notificati tramite email.
+  </p>
+
+  <h2>11. Contatti</h2>
+  <p>
+    Per qualsiasi domanda: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a>
+  </p>
+
+</div>
+
+<!-- ═══════════════════ ENGLISH ═══════════════════ -->
+<div data-lang="en">
+
+  <span class="updated">Last updated: May 2025</span>
+
+  <h2>1. Data Controller</h2>
+  <p>
+    The data controller is <strong>Federico Biagioni</strong>,
+    developer of the MushScout application (<code>it.fungofind.app</code>).
+  </p>
+  <p>For any privacy-related requests: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+
+  <h2>2. Data Collected and Purposes</h2>
+  <p>MushScout collects the following personal data:</p>
+
+  <div class="card">
+    <div class="card-title">📧 Account Data</div>
+    <ul>
+      <li><strong>Email address</strong> — for registration and authentication</li>
+      <li><strong>Name / username</strong> — for the user profile</li>
+      <li><strong>Profile photo</strong> (optional) — uploaded by the user</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Location Data</div>
+    <ul>
+      <li><strong>Precise GPS coordinates</strong> — saved for each mushroom finding</li>
+      <li><strong>GPS route</strong> — tracked during foraging sessions</li>
+      <li>Location is used <em>only</em> for core app features and is never shared with third parties for advertising purposes</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Photos and Content</div>
+    <ul>
+      <li><strong>Mushroom photos</strong> — voluntarily uploaded by the user, stored on Cloudinary</li>
+      <li>Photos are compressed before upload</li>
+      <li>Photos are never public by default</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Usage Data</div>
+    <ul>
+      <li>Number of finds, sessions, achievements</li>
+      <li>Aggregate usage statistics (non-identifying)</li>
+      <li>Device token for push notifications (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <h2>3. Legal Basis for Processing</h2>
+  <ul>
+    <li><strong>Contract performance</strong> (Art. 6.1.b GDPR) — to provide app functionality</li>
+    <li><strong>Consent</strong> (Art. 6.1.a GDPR) — for push notifications and personalized advertising</li>
+    <li><strong>Legitimate interest</strong> (Art. 6.1.f GDPR) — for security and abuse prevention</li>
+  </ul>
+
+  <h2>4. Third-Party Services</h2>
+  <p>MushScout uses the following third-party services, each with their own privacy policy:</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Authentication, push notifications</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Advertising (free users)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Sign in with Google account</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Species identification from photos</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudinary</strong>
+      <span>Photo storage</span><br>
+      <a href="https://cloudinary.com/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Local weather data</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Backend hosting and database</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Privacy policy →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Map tiles</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Privacy policy →</a>
+    </div>
+  </div>
+
+  <h2>5. Data Retention</h2>
+  <ul>
+    <li>Account data is retained while the account is active</li>
+    <li>Upon account deletion, all personal data is erased within <strong>30 days</strong></li>
+    <li>Anonymous technical logs may be retained for up to 90 days</li>
+  </ul>
+
+  <h2>6. International Data Transfers</h2>
+  <p>
+    Some providers (Google, Cloudinary, Railway) may transfer data outside the EU.
+    Such transfers occur on the basis of <strong>Standard Contractual Clauses</strong>
+    approved by the European Commission or equivalent mechanisms.
+  </p>
+
+  <h2>7. Your Rights (GDPR)</h2>
+  <p>As an EU resident, you have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> — receive a copy of your data</li>
+    <li><strong>Rectification</strong> — correct inaccurate data</li>
+    <li><strong>Erasure</strong> — delete your account and all associated data</li>
+    <li><strong>Portability</strong> — export your data in JSON or CSV format (available from your profile)</li>
+    <li><strong>Objection</strong> — object to processing for marketing purposes</li>
+    <li><strong>Withdrawal of consent</strong> — at any time, without affecting prior processing</li>
+  </ul>
+  <p>To exercise these rights: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+
+  <h2>8. Security</h2>
+  <p>
+    Data is transmitted over encrypted HTTPS connections. Passwords are never stored
+    in plain text. Data is stored on cloud infrastructure with industry-standard security measures.
+  </p>
+
+  <h2>9. Children</h2>
+  <p>
+    MushScout is not intended for children under 13. We do not knowingly collect data
+    from minors. If you are a parent and believe your child has created an account,
+    contact us for immediate removal.
+  </p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    Any changes will be posted on this page with an updated date. For material changes,
+    registered users will be notified by email.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    For any questions: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a>
+  </p>
+
+</div>
+</main>
+
+<footer>
+  MushScout · it.fungofind.app · Federico Biagioni · 2025
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.includes(lang === 'it' ? '🇮🇹' : '🇬🇧'));
+    });
+  }
+</script>
+</body>
+</html>
