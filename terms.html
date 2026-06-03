@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MushScout — Termini di Servizio / Terms of Service</title>
+<style>
+  :root { --green: #2f7d4f; --bg: #faf9f5; --ink: #2a2015; --muted: #6b7280; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: #374151; line-height: 1.65; }
+  header { background: #fff; box-shadow: 0 1px 4px rgba(60,40,20,.08); position: sticky; top: 0; z-index: 10; }
+  .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .brand { font-weight: 800; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--green); }
+  .lang button { border: 1.5px solid #d8d3c8; background: #fff; color: var(--ink); border-radius: 999px; padding: 6px 14px; font-weight: 700; cursor: pointer; margin-left: 6px; font-size: 13px; }
+  .lang button.active { background: var(--green); color: #fff; border-color: var(--green); }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+  h1 { font-size: 26px; color: var(--ink); margin: 8px 0 4px; letter-spacing: -.02em; }
+  .updated { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
+  h2 { font-size: 18px; color: var(--ink); margin: 28px 0 8px; letter-spacing: -.01em; }
+  ul { margin: 6px 0 10px 18px; padding: 0; }
+  li { margin-bottom: 6px; }
+  a { color: var(--green); font-weight: 600; }
+  .nav { margin-bottom: 18px; font-size: 14px; }
+  .nav a { margin-right: 14px; }
+  .warn { background: #fffbeb; border: 1.5px solid #fbbf24; border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+  .warn h2 { color: #92400e; margin-top: 0; }
+  .warn p { color: #78350f; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px; border-top: 1px solid #e0dbd0; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">Mush<span>Scout</span></div>
+    <div class="lang">
+      <button id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="nav">
+    <a href="./privacy-policy.html">Privacy</a>
+    <a href="./terms.html">Termini / Terms</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <!-- ═══════════════ ITALIANO ═══════════════ -->
+  <section id="it">
+    <h1>Termini di Servizio</h1>
+    <p class="updated">Ultimo aggiornamento: maggio 2026</p>
+
+    <h2>1. Accettazione dei termini</h2>
+    <p>Utilizzando l'applicazione <strong>MushScout</strong> (l'"App") accetti i presenti Termini di Servizio. Se non li accetti, non utilizzare l'App.</p>
+
+    <h2>2. Descrizione del servizio</h2>
+    <p>MushScout è un'app per la raccolta dei funghi che consente di:</p>
+    <ul>
+      <li>Registrare sessioni di ricerca e ritrovamenti con tracciato GPS</li>
+      <li>Visualizzare la posizione su mappa (satellite e topografica)</li>
+      <li>Salvare mappe topografiche offline per aree senza copertura</li>
+      <li>Condividere ritrovamenti con amici e partecipare a sfide</li>
+      <li>Identificare funghi tramite intelligenza artificiale (funzione ausiliaria)</li>
+      <li>Fotografare e registrare la raccolta di rifiuti abbandonati</li>
+      <li>Ricevere avvisi di prossimità a ritrovamenti passati</li>
+      <li>Ripercorrere percorsi di sessioni precedenti (funzione Premium)</li>
+      <li>Attivare un sistema SOS di emergenza con coordinate GPS</li>
+    </ul>
+
+    <div class="warn">
+      <h2>⚠️ 3. Avvertenza fondamentale sulla sicurezza</h2>
+      <p><strong>Non raccogliere né consumare mai un fungo basandoti esclusivamente sull'App o sull'identificazione AI.</strong></p>
+      <p>L'identificazione automatica può essere errata. Prima di consumare qualsiasi fungo è <strong>indispensabile</strong> consultare un micologo esperto o l'ispettorato micologico della tua ASL. L'App è un ausilio per il cercatore esperto, non un sostituto della competenza micologica. MushScout non si assume alcuna responsabilità per danni alla salute derivanti dall'ingestione di funghi identificati tramite l'App.</p>
+    </div>
+
+    <h2>4. Uso responsabile e normativa</h2>
+    <p>L'utente si impegna a rispettare le leggi locali sulla raccolta dei funghi (quantità, aree protette), a non raccogliere dove vietato, a rispettare l'ambiente, a non inserire dati falsi e a non usare l'App per attività illegali. La normativa varia per regione: l'utente è responsabile di conoscerla e rispettarla.</p>
+
+    <h2>5. Account e dati personali</h2>
+    <p>Per usare MushScout serve un account (email o Google). L'utente è responsabile della riservatezza delle credenziali. I dati (ritrovamenti, percorsi, posizioni, foto) sono associati all'account. Le foto sono archiviate su Cloudflare R2; i metadati su server in Europa. Non vendiamo dati a terzi. L'utente può eliminare account e dati da Profilo → Account → Elimina account, o contattando il supporto.</p>
+
+    <h2>6. Dati di posizione GPS</h2>
+    <p>L'App usa il GPS per mostrare la posizione, registrare il percorso, geolocalizzare i ritrovamenti e fornire il meteo locale. I dati GPS vengono memorizzati solo durante una sessione attiva. L'App può accedere al GPS in background durante una sessione per registrare il tracciato anche a schermo spento. L'utente può disattivare il GPS nelle impostazioni del dispositivo, ma alcune funzioni potrebbero non essere disponibili.</p>
+
+    <h2>7. Contenuti degli utenti</h2>
+    <p>Le foto e le note rimangono di proprietà dell'utente, che concede a MushScout una licenza limitata per visualizzarle e archiviarle nell'ambito del servizio. È vietato caricare contenuti illegali, offensivi o che violino diritti di terzi.</p>
+
+    <h2>8. Funzione Premium e pagamenti</h2>
+    <p>MushScout offre una versione gratuita e un abbonamento annuale Premium (€9,99/anno; offerta di lancio €6,99 fino al 31/07/2026) che sblocca funzioni aggiuntive (ritrovamenti e AI illimitati, mappe offline illimitate, sfide, statistiche avanzate, "Segui percorso", nessuna pubblicità). I pagamenti sono gestiti da <strong>Google Play</strong> e ai rimborsi si applicano le politiche di Google Play. Ci riserviamo di modificare prezzi e funzioni Premium con preavviso di 30 giorni. La versione gratuita include annunci <strong>Google AdMob</strong>; i video facoltativi (rewarded) sbloccano slot temporanei. Nessun annuncio per gli utenti Premium.</p>
+
+    <h2>9. Mappe e dati cartografici</h2>
+    <p>Le mappe online usano dati <strong>© OpenStreetMap contributors</strong> (ODbL) e, per il satellite, servizi ESRI. La vista topografica usa <strong>OpenTopoMap</strong> (© OpenTopoMap, CC-BY-SA), scaricabile offline. L'utente è tenuto a rispettare i termini d'uso di OpenStreetMap e OpenTopoMap. MushScout implementa caching e limiti per rispettare tali termini.</p>
+
+    <h2>10. Limitazione di responsabilità</h2>
+    <p>MushScout è fornita "così com'è", senza garanzia di disponibilità continua, assenza di errori o accuratezza. In nessun caso MushScout sarà responsabile per danni diretti, indiretti o consequenziali, in particolare per: danni alla salute da ingestione di funghi, violazioni della normativa locale, perdita di dati GPS o di ritrovamenti, errori di identificazione AI.</p>
+
+    <h2>11. Modifiche ai termini</h2>
+    <p>Ci riserviamo il diritto di modificare i termini. Le modifiche significative saranno comunicate via notifica in-app. L'uso continuato dopo la notifica costituisce accettazione.</p>
+
+    <h2>12. Legge applicabile</h2>
+    <p>I presenti Termini sono regolati dalla legge italiana. Per controversie è competente il Foro di residenza dell'utente consumatore.</p>
+
+    <h2>13. Contatti</h2>
+    <p>Per domande sui Termini o per cancellare l'account: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+  </section>
+
+  <!-- ═══════════════ ENGLISH ═══════════════ -->
+  <section id="en" hidden>
+    <h1>Terms of Service</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <h2>1. Acceptance of terms</h2>
+    <p>By using the <strong>MushScout</strong> application (the "App") you accept these Terms of Service. If you do not accept them, do not use the App.</p>
+
+    <h2>2. Description of the service</h2>
+    <p>MushScout is a mushroom foraging app that lets you:</p>
+    <ul>
+      <li>Record foraging sessions and finds with a GPS track</li>
+      <li>View your position on a map (satellite and topographic)</li>
+      <li>Save offline topographic maps for areas without coverage</li>
+      <li>Share finds with friends and take part in challenges</li>
+      <li>Identify mushrooms via artificial intelligence (an auxiliary feature)</li>
+      <li>Photograph and log the collection of abandoned litter</li>
+      <li>Receive proximity alerts to past finds</li>
+      <li>Retrace routes from previous sessions (Premium feature)</li>
+      <li>Trigger an emergency SOS with GPS coordinates</li>
+    </ul>
+
+    <div class="warn">
+      <h2>⚠️ 3. Fundamental safety warning</h2>
+      <p><strong>Never pick or eat a mushroom based solely on the App or on the AI identification.</strong></p>
+      <p>Automatic identification can be wrong. Before eating any mushroom it is <strong>essential</strong> to consult an expert mycologist or a mycological inspection authority. The App is an aid for the experienced forager, not a substitute for mycological expertise. MushScout takes no responsibility for health damage resulting from eating mushrooms identified via the App.</p>
+    </div>
+
+    <h2>4. Responsible use and regulations</h2>
+    <p>You agree to respect local mushroom-picking laws (quantities, protected areas), not to pick where prohibited, to respect the environment, not to enter false data, and not to use the App for illegal activities. Regulations vary by region: you are responsible for knowing and following them.</p>
+
+    <h2>5. Account and personal data</h2>
+    <p>Using MushScout requires an account (email or Google). You are responsible for keeping your credentials confidential. Your data (finds, routes, locations, photos) is linked to your account. Photos are stored on Cloudflare R2; metadata on servers in Europe. We do not sell data to third parties. You can delete your account and data via Profile → Account → Delete account, or by contacting support.</p>
+
+    <h2>6. GPS location data</h2>
+    <p>The App uses GPS to show your position, record your route, geolocate finds and provide local weather. GPS data is stored only during an active session. The App can access GPS in the background during a session to record the track even with the screen off. You can disable GPS in device settings, but some features may then be unavailable.</p>
+
+    <h2>7. User content</h2>
+    <p>Photos and notes remain your property; you grant MushScout a limited license to display and store them as part of the service. Uploading illegal, offensive or rights-infringing content is prohibited.</p>
+
+    <h2>8. Premium and payments</h2>
+    <p>MushScout offers a free version and an annual Premium subscription (€9.99/year; launch offer €6.99 until 31/07/2026) unlocking extra features (unlimited finds and AI, unlimited offline maps, challenges, advanced stats, "Follow route", no ads). Payments are handled by <strong>Google Play</strong> and refunds follow Google Play policies. We reserve the right to change Premium prices and features with 30 days' notice. The free version includes <strong>Google AdMob</strong> ads; optional rewarded videos unlock temporary slots. No ads for Premium users.</p>
+
+    <h2>9. Maps and cartographic data</h2>
+    <p>Online maps use <strong>© OpenStreetMap contributors</strong> data (ODbL) and, for satellite, ESRI services. The topographic view uses <strong>OpenTopoMap</strong> (© OpenTopoMap, CC-BY-SA), downloadable offline. You must respect the OpenStreetMap and OpenTopoMap terms of use. MushScout implements caching and limits to respect those terms.</p>
+
+    <h2>10. Limitation of liability</h2>
+    <p>MushScout is provided "as is", with no guarantee of continuous availability, absence of errors or accuracy. In no event shall MushScout be liable for direct, indirect or consequential damages, in particular: health damage from eating mushrooms, breaches of local regulations, loss of GPS or find data, or AI identification errors.</p>
+
+    <h2>11. Changes to the terms</h2>
+    <p>We reserve the right to modify these terms. Significant changes will be communicated via an in-app notice. Continued use after the notice constitutes acceptance.</p>
+
+    <h2>12. Governing law</h2>
+    <p>These Terms are governed by Italian law. For disputes, the competent court is that of the consumer's place of residence.</p>
+
+    <h2>13. Contact</h2>
+    <p>For questions about the Terms or to delete your account: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+  </section>
+</main>
+<footer>🍄 MushScout · 2026</footer>
+<script>
+  function setLang(l) {
+    document.getElementById('it').hidden = (l !== 'it');
+    document.getElementById('en').hidden = (l !== 'en');
+    document.getElementById('btn-it').classList.toggle('active', l === 'it');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.documentElement.lang = l;
+    try { localStorage.setItem('ms_legal_lang', l); } catch (e) {}
+  }
+  (function () {
+    var saved; try { saved = localStorage.getItem('ms_legal_lang'); } catch (e) {}
+    var l = saved || (navigator.language && navigator.language.slice(0,2) === 'en' ? 'en' : 'it');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>

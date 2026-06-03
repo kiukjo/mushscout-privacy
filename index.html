@@ -152,7 +152,7 @@
     Il titolare del trattamento dei dati personali è <strong>Federico Biagioni</strong>,
     sviluppatore dell'applicazione MushScout (<code>it.fungofind.app</code>).
   </p>
-  <p>Per qualsiasi richiesta relativa alla privacy: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+  <p>Per qualsiasi richiesta relativa alla privacy: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
 
   <h2>2. Dati raccolti e finalità</h2>
   <p>MushScout raccoglie i seguenti dati personali:</p>
@@ -171,16 +171,25 @@
     <ul>
       <li><strong>Coordinate GPS precise</strong> — salvate per ogni ritrovamento di funghi</li>
       <li><strong>Percorso GPS</strong> — tracciato durante le sessioni di raccolta</li>
-      <li>La localizzazione è utilizzata <em>solo</em> per le funzionalità principali dell'app e non viene condivisa con terzi a fini pubblicitari</li>
+      <li><strong>Posizione in background</strong> — durante una sessione di raccolta avviata dall'utente, l'app registra il tracciato GPS anche a schermo spento o in secondo piano, tramite un <strong>foreground service con notifica persistente</strong>. Richiede il permesso di posizione "Sempre" su Android. Il tracciamento si attiva solo durante una sessione attiva</li>
+      <li>La localizzazione è utilizzata <em>solo</em> per le funzionalità principali dell'app; le posizioni dei ritrovamenti sono private e non vengono condivise con altri utenti né con terzi a fini pubblicitari</li>
     </ul>
   </div>
 
   <div class="card">
     <div class="card-title">📸 Foto e contenuti</div>
     <ul>
-      <li><strong>Foto dei funghi</strong> — caricate volontariamente dall'utente, salvate su Cloudinary</li>
+      <li><strong>Foto dei funghi</strong> — caricate volontariamente dall'utente, salvate su Cloudflare R2 (data center in Europa). Le foto scattate offline restano sul dispositivo (IndexedDB) finché non torna la connessione</li>
       <li>Le foto vengono compresse prima del caricamento</li>
       <li>Le foto non sono mai pubbliche di default</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Pubblicità (solo utenti free)</div>
+    <ul>
+      <li>Per gli utenti della versione gratuita, <strong>Google AdMob</strong> può raccogliere l'<strong>identificatore pubblicitario di Android (Advertising ID)</strong> e dati di utilizzo per mostrare e misurare gli annunci</li>
+      <li>Puoi reimpostare o eliminare l'Advertising ID in Impostazioni → Google → Annunci. Gli utenti Premium non vedono pubblicità</li>
     </ul>
   </div>
 
@@ -225,9 +234,9 @@
       <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
     </div>
     <div class="service-card">
-      <strong>Cloudinary</strong>
+      <strong>Cloudflare R2</strong>
       <span>Archiviazione foto</span><br>
-      <a href="https://cloudinary.com/privacy" target="_blank">Privacy policy →</a>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Privacy policy →</a>
     </div>
     <div class="service-card">
       <strong>OpenWeatherMap</strong>
@@ -260,7 +269,7 @@
 
   <h2>6. Trasferimento internazionale dei dati</h2>
   <p>
-    Alcuni fornitori (Google, Cloudinary, Railway) possono trasferire dati al di fuori dell'UE.
+    Alcuni fornitori (Google, Railway) possono trasferire dati al di fuori dell'UE.
     Tali trasferimenti avvengono sulla base delle <strong>Clausole Contrattuali Standard</strong>
     approvate dalla Commissione Europea o di meccanismi equivalenti.
   </p>
@@ -275,7 +284,7 @@
     <li><strong>Opposizione</strong> — opporti al trattamento per fini di marketing</li>
     <li><strong>Revoca del consenso</strong> — in qualsiasi momento, senza pregiudicare il trattamento precedente</li>
   </ul>
-  <p>Per esercitare questi diritti: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+  <p>Per esercitare questi diritti: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
   <p>Hai anche il diritto di presentare reclamo al <a href="https://www.garanteprivacy.it" target="_blank">Garante per la protezione dei dati personali</a>.</p>
 
   <h2>8. Sicurezza</h2>
@@ -300,7 +309,7 @@
 
   <h2>11. Contatti</h2>
   <p>
-    Per qualsiasi domanda: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a>
+    Per qualsiasi domanda: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
   </p>
 
 </div>
@@ -315,7 +324,7 @@
     The data controller is <strong>Federico Biagioni</strong>,
     developer of the MushScout application (<code>it.fungofind.app</code>).
   </p>
-  <p>For any privacy-related requests: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+  <p>For any privacy-related requests: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
 
   <h2>2. Data Collected and Purposes</h2>
   <p>MushScout collects the following personal data:</p>
@@ -334,16 +343,25 @@
     <ul>
       <li><strong>Precise GPS coordinates</strong> — saved for each mushroom finding</li>
       <li><strong>GPS route</strong> — tracked during foraging sessions</li>
-      <li>Location is used <em>only</em> for core app features and is never shared with third parties for advertising purposes</li>
+      <li><strong>Background location</strong> — during a user-initiated foraging session, the app records the GPS track even with the screen off or in the background, via a <strong>foreground service with a persistent notification</strong>. This requires "Always" location permission on Android. Tracking is active only during an active session</li>
+      <li>Location is used <em>only</em> for core app features; find locations are private and never shared with other users or with third parties for advertising purposes</li>
     </ul>
   </div>
 
   <div class="card">
     <div class="card-title">📸 Photos and Content</div>
     <ul>
-      <li><strong>Mushroom photos</strong> — voluntarily uploaded by the user, stored on Cloudinary</li>
+      <li><strong>Mushroom photos</strong> — voluntarily uploaded by the user, stored on Cloudflare R2 (EU data centers). Photos taken offline stay on the device (IndexedDB) until the connection returns</li>
       <li>Photos are compressed before upload</li>
       <li>Photos are never public by default</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Advertising (free users only)</div>
+    <ul>
+      <li>For free-version users, <strong>Google AdMob</strong> may collect the <strong>Android Advertising ID</strong> and usage data to serve and measure ads</li>
+      <li>You can reset or delete the Advertising ID in Settings → Google → Ads. Premium users see no ads</li>
     </ul>
   </div>
 
@@ -388,9 +406,9 @@
       <a href="https://policies.google.com/privacy" target="_blank">Privacy policy →</a>
     </div>
     <div class="service-card">
-      <strong>Cloudinary</strong>
+      <strong>Cloudflare R2</strong>
       <span>Photo storage</span><br>
-      <a href="https://cloudinary.com/privacy" target="_blank">Privacy policy →</a>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Privacy policy →</a>
     </div>
     <div class="service-card">
       <strong>OpenWeatherMap</strong>
@@ -423,7 +441,7 @@
 
   <h2>6. International Data Transfers</h2>
   <p>
-    Some providers (Google, Cloudinary, Railway) may transfer data outside the EU.
+    Some providers (Google, Railway) may transfer data outside the EU.
     Such transfers occur on the basis of <strong>Standard Contractual Clauses</strong>
     approved by the European Commission or equivalent mechanisms.
   </p>
@@ -438,7 +456,7 @@
     <li><strong>Objection</strong> — object to processing for marketing purposes</li>
     <li><strong>Withdrawal of consent</strong> — at any time, without affecting prior processing</li>
   </ul>
-  <p>To exercise these rights: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a></p>
+  <p>To exercise these rights: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
 
   <h2>8. Security</h2>
   <p>
@@ -461,14 +479,14 @@
 
   <h2>11. Contact</h2>
   <p>
-    For any questions: <a href="mailto:privacy@mushscout.app">privacy@mushscout.app</a>
+    For any questions: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
   </p>
 
 </div>
 </main>
 
 <footer>
-  MushScout · it.fungofind.app · Federico Biagioni · 2025
+  MushScout · it.fungofind.app · Federico Biagioni · 2026
 </footer>
 
 <script>

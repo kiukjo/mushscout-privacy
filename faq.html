@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MushScout — FAQ</title>
+<style>
+  :root { --green: #2f7d4f; --bg: #faf9f5; --ink: #2a2015; --muted: #6b7280; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: #374151; line-height: 1.6; }
+  header { background: #fff; box-shadow: 0 1px 4px rgba(60,40,20,.08); position: sticky; top: 0; z-index: 10; }
+  .bar { max-width: 760px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .brand { font-weight: 800; color: var(--ink); font-size: 18px; }
+  .brand span { color: var(--green); }
+  .lang button { border: 1.5px solid #d8d3c8; background: #fff; color: var(--ink); border-radius: 999px; padding: 6px 14px; font-weight: 700; cursor: pointer; margin-left: 6px; font-size: 13px; }
+  .lang button.active { background: var(--green); color: #fff; border-color: var(--green); }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+  h1 { font-size: 26px; color: var(--ink); margin: 8px 0 18px; letter-spacing: -.02em; }
+  h2 { font-size: 16px; color: var(--green); margin: 26px 0 6px; text-transform: uppercase; letter-spacing: .04em; }
+  details { background: #fff; border: 1px solid #ece7dc; border-radius: 12px; margin: 8px 0; padding: 0 14px; }
+  summary { font-weight: 700; color: var(--ink); cursor: pointer; padding: 14px 0; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: '＋'; color: var(--green); font-weight: 800; margin-right: 10px; }
+  details[open] summary::before { content: '－'; }
+  details p { margin: 0 0 14px; }
+  a { color: var(--green); font-weight: 600; }
+  .nav { margin-bottom: 18px; font-size: 14px; }
+  .nav a { margin-right: 14px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px; border-top: 1px solid #e0dbd0; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">Mush<span>Scout</span></div>
+    <div class="lang">
+      <button id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="nav">
+    <a href="./privacy-policy.html">Privacy</a>
+    <a href="./terms.html">Termini / Terms</a>
+    <a href="./faq.html">FAQ</a>
+  </div>
+
+  <!-- ═══════════════ ITALIANO ═══════════════ -->
+  <section id="it">
+    <h1>Domande frequenti</h1>
+
+    <h2>Sicurezza & funghi</h2>
+    <details><summary>Posso fidarmi dell'AI per decidere se mangiare un fungo?</summary><p>No, assolutamente mai. L'AI è un aiuto per il riconoscimento, non un sostituto di un micologo esperto. Molti funghi tossici somigliano a quelli commestibili. Fai sempre verificare i funghi da un esperto o dall'ispettorato micologico della tua ASL prima di consumarli.</p></details>
+    <details><summary>L'AI ha sbagliato a riconoscere il fungo.</summary><p>È normale: l'AI dà fino a 3 ipotesi con una percentuale di confidenza, non una certezza. Una foto chiara (cappello + gambo, sfondo neutro, buona luce) migliora molto i risultati.</p></details>
+
+    <h2>Tracciamento GPS & batteria</h2>
+    <details><summary>Il tracciato si interrompe a schermo spento o col telefono in tasca.</summary><p>È l'ottimizzazione batteria di Android che chiude l'app in background. Vai in Impostazioni → App → MushScout → Batteria e scegli "Senza restrizioni". Su Xiaomi/Redmi, Huawei, Samsung e OPPO attiva anche "Avvio automatico" per MushScout.</p></details>
+    <details><summary>L'app consuma molta batteria.</summary><p>Il GPS continuo è energivoro (vale per ogni app di tracking). Parti con batteria carica, usa la pausa ⏸ quando ti fermi a lungo e porta un power bank per le uscite lunghe. Senza una sessione attiva, l'app non registra il percorso.</p></details>
+    <details><summary>Perché serve il permesso di posizione "Sempre"?</summary><p>Serve solo per registrare il percorso durante una sessione di cerca, anche a schermo spento. Le posizioni non vengono mai condivise con altri utenti.</p></details>
+
+    <h2>Offline</h2>
+    <details><summary>Funziona davvero senza connessione?</summary><p>Sì. Tracciato GPS, ritrovamenti e pulizie (foto incluse), SOS e "torna alla macchina" funzionano offline. I dati si sincronizzano automaticamente al ritorno della rete.</p></details>
+    <details><summary>Nel bosco non vedo la mappa.</summary><p>La mappa va scaricata prima (serve connessione). Passa alla mappa topografica 🗺️, premi 💾 Salva questa zona e scegli il raggio. Fallo a casa o in WiFi prima di partire. Le zone salvate hanno un bordo rosso tratteggiato.</p></details>
+    <details><summary>Perché offline vedo la topografica e non il satellite?</summary><p>L'imagery satellitare non è salvabile offline per i termini di servizio del fornitore. La topografica (OpenTopoMap) è salvabile ed è ideale nel bosco (sentieri, quote).</p></details>
+
+    <h2>Account, privacy, dati</h2>
+    <details><summary>I miei luoghi dei funghi sono privati?</summary><p>Sì, sono privati e visibili solo a te per impostazione predefinita. Non vengono mai mostrati ad altri utenti.</p></details>
+    <details><summary>Dove finiscono le mie foto?</summary><p>Su Cloudflare R2 (data center in Europa), con codici anonimi. Le foto inviate all'AI non vengono conservate da Google dopo l'elaborazione.</p></details>
+    <details><summary>Il contatto SOS dove viene salvato?</summary><p>Solo sul tuo dispositivo. Non viene mai trasmesso ai nostri server.</p></details>
+    <details><summary>Posso esportare o cancellare i miei dati?</summary><p>Esportazione (JSON/CSV) per gli utenti Premium in Profilo → App. Cancellazione completa: Profilo → Account → Elimina account (irreversibile, entro 30 giorni).</p></details>
+
+    <h2>Premium, prezzi, pubblicità</h2>
+    <details><summary>Quanto costa? È un abbonamento?</summary><p>La versione gratuita è completa per iniziare. Premium è un abbonamento annuale a 9,99€/anno (offerta di lancio 6,99€ fino al 31/07/2026). Si disdice quando vuoi da Google Play.</p></details>
+    <details><summary>Ho comprato Premium ma non si è attivato.</summary><p>Apri la pagina Premium e premi "Ripristina acquisti". L'app ritenta anche da sola al riavvio. Se persiste, scrivici a <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a> con la ricevuta Google Play.</p></details>
+    <details><summary>La pubblicità è troppo invasiva.</summary><p>Gli annunci sono solo nella versione gratuita: un banner discreto in alcune liste e un annuncio a fine sessione (max 1 ogni 3 minuti). I video sono facoltativi e sbloccano slot extra. Premium = nessuna pubblicità.</p></details>
+
+    <h2>Compatibilità</h2>
+    <details><summary>È disponibile per iPhone?</summary><p>Al lancio MushScout è disponibile per Android. Una versione iOS è valutata in base alla richiesta.</p></details>
+  </section>
+
+  <!-- ═══════════════ ENGLISH ═══════════════ -->
+  <section id="en" hidden>
+    <h1>Frequently asked questions</h1>
+
+    <h2>Safety & mushrooms</h2>
+    <details><summary>Can I trust the AI to decide whether to eat a mushroom?</summary><p>No, never. The AI is an aid for recognition, not a substitute for an expert mycologist. Many toxic mushrooms look like edible ones. Always have mushrooms checked by an expert before eating them.</p></details>
+    <details><summary>The AI misidentified the mushroom.</summary><p>That's expected: the AI gives up to 3 guesses with a confidence score, not a certainty. A clear photo (cap + stem, neutral background, good light) greatly improves results.</p></details>
+
+    <h2>GPS tracking & battery</h2>
+    <details><summary>The track stops when the screen is off or the phone is in my pocket.</summary><p>Android battery optimization is closing the app in the background. Go to Settings → Apps → MushScout → Battery and choose "Unrestricted". On Xiaomi/Redmi, Huawei, Samsung and OPPO also enable "Autostart" for MushScout.</p></details>
+    <details><summary>The app drains a lot of battery.</summary><p>Continuous GPS is power-hungry (true of any tracking app). Start with a full charge, use the ⏸ pause when you stop for a while, and carry a power bank for long trips. Without an active session, the app does not record a route.</p></details>
+    <details><summary>Why does it need "Always" location permission?</summary><p>Only to record your route during a foraging session, even with the screen off. Locations are never shared with other users.</p></details>
+
+    <h2>Offline</h2>
+    <details><summary>Does it really work without a connection?</summary><p>Yes. GPS tracking, finds and cleanups (photos included), SOS and "back to car" all work offline. Data syncs automatically when the connection returns.</p></details>
+    <details><summary>I can't see the map in the woods.</summary><p>Download the map first (needs a connection). Switch to the topographic map 🗺️, tap 💾 Save this area and choose the radius. Do it at home or on WiFi before you leave. Saved areas have a dashed red border.</p></details>
+    <details><summary>Why do I see the topographic map offline and not satellite?</summary><p>Satellite imagery can't be stored offline due to the provider's terms. The topographic map (OpenTopoMap) can be saved and is ideal in the woods (trails, elevation).</p></details>
+
+    <h2>Account, privacy, data</h2>
+    <details><summary>Are my mushroom spots private?</summary><p>Yes, they are private and visible only to you by default. They're never shown to other users.</p></details>
+    <details><summary>Where do my photos go?</summary><p>To Cloudflare R2 (EU data centers), with anonymous keys. Photos sent to the AI are not retained by Google after processing.</p></details>
+    <details><summary>Where is the SOS contact stored?</summary><p>Only on your device. It's never transmitted to our servers.</p></details>
+    <details><summary>Can I export or delete my data?</summary><p>Export (JSON/CSV) for Premium users under Profile → App. Full deletion: Profile → Account → Delete account (irreversible, within 30 days).</p></details>
+
+    <h2>Premium, pricing, ads</h2>
+    <details><summary>How much does it cost? Is it a subscription?</summary><p>The free version is complete to get started. Premium is a yearly subscription at €9.99/year (launch offer €6.99 until 31/07/2026). Cancel anytime via Google Play.</p></details>
+    <details><summary>I bought Premium but it didn't activate.</summary><p>Open the Premium page and tap "Restore purchases". The app also retries on restart. If it persists, email <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a> with your Google Play receipt.</p></details>
+    <details><summary>The ads are too intrusive.</summary><p>Ads are only in the free version: a discreet banner on some lists and one full-screen ad at the end of a session (max 1 every 3 minutes). Videos are optional and unlock extra slots. Premium = no ads.</p></details>
+
+    <h2>Compatibility</h2>
+    <details><summary>Is it available for iPhone?</summary><p>At launch MushScout is available for Android. An iOS version is being considered based on demand.</p></details>
+  </section>
+</main>
+<footer>🍄 MushScout · 2026</footer>
+<script>
+  function setLang(l) {
+    document.getElementById('it').hidden = (l !== 'it');
+    document.getElementById('en').hidden = (l !== 'en');
+    document.getElementById('btn-it').classList.toggle('active', l === 'it');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.documentElement.lang = l;
+    try { localStorage.setItem('ms_legal_lang', l); } catch (e) {}
+  }
+  (function () {
+    var saved; try { saved = localStorage.getItem('ms_legal_lang'); } catch (e) {}
+    var l = saved || (navigator.language && navigator.language.slice(0,2) === 'en' ? 'en' : 'it');
+    setLang(l);
+  })();
+</script>
+</body>
+</html>
