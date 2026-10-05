@@ -135,8 +135,9 @@
   <div class="logo">Mush<span>Scout</span></div>
   <p>it.fungofind.app</p>
   <div class="lang-switch">
-    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
-    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn active" data-l="it" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" data-l="en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" data-l="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
   </div>
 </header>
 
@@ -521,6 +522,200 @@
   </p>
 
 </div>
+
+<!-- ═══════════════════ DEUTSCH ═══════════════════ -->
+<!-- Übersetzung der englischen Fassung (Okt. 2026). Maßgeblich ist der italienische Text. -->
+<div data-lang="de">
+
+  <span class="updated">Zuletzt aktualisiert: 5. Oktober 2026</span>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Verantwortlich ist <strong>Federico Biagioni</strong>,
+    Entwickler der Anwendung MushScout (<code>it.fungofind.app</code>).
+  </p>
+  <p>Für alle Anfragen zum Datenschutz: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+
+  <h2>2. Erhobene Daten und Zwecke</h2>
+  <p>MushScout erhebt folgende personenbezogene Daten:</p>
+
+  <div class="card">
+    <div class="card-title">📧 Kontodaten</div>
+    <ul>
+      <li><strong>E-Mail-Adresse</strong> – für Registrierung und Anmeldung</li>
+      <li><strong>Name / Benutzername</strong> – für das Nutzerprofil</li>
+      <li><strong>Profilfoto</strong> (optional) – vom Nutzer hochgeladen</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Standortdaten</div>
+    <ul>
+      <li><strong>Genaue GPS-Koordinaten</strong> – zu jedem Pilzfund gespeichert</li>
+      <li><strong>GPS-Route</strong> – während der Sammeltouren aufgezeichnet</li>
+      <li><strong>Wälder, die du beobachtest</strong> – wenn du unter „Wald analysieren“ auf „Sag mir, wann es losgeht“ tippst, speichern wir Namen und Punkt dieses Waldes für den Kalender und den Hinweis. Nur du siehst sie; wenn du ihn nicht mehr beobachtest, werden sie gelöscht</li>
+      <li><strong>Standort im Hintergrund</strong> – während einer vom Nutzer gestarteten Sammeltour zeichnet die App die GPS-Spur auch bei ausgeschaltetem Bildschirm oder im Hintergrund auf, über einen <strong>Vordergrunddienst mit dauerhafter Benachrichtigung</strong>. Unter Android braucht es dafür die Standortberechtigung „Immer“. Die Aufzeichnung ist nur während einer aktiven Tour eingeschaltet</li>
+      <li>Der Standort wird <em>nur</em> für die Kernfunktionen der App genutzt; <strong>nur du siehst</strong> deine Positionen und Funde, und sie werden nie zu Werbezwecken an Dritte weitergegeben. Andere Nutzer sehen sie nur, wenn du sie auf einem dieser Wege teilst:</li>
+      <li><strong>Tour mit einem Freund</strong> – während einer gemeinsamen Tour sieht der Freund, den du eingeladen hast (oder der dich eingeladen hat), deine Position in Echtzeit, deine Richtung und wie viele Funde du gemacht hast. Nur er, und nur solange die Tour dauert: Wenn sie endet, werden die Positionen von unseren Servern gelöscht</li>
+      <li><strong>Einen Wald leihen</strong> – du kannst einem Freund einen deiner Wälder leihen: Er sieht den Namen, den du ihm gegeben hast, seinen Punkt auf der Karte und seine Vorhersage, <strong>nicht</strong> deine Funde. Ein Wald nach dem anderen; du kannst ihn jederzeit zurücknehmen (dein Freund ebenso), und dann wird die Leihe von unseren Servern gelöscht</li>
+      <li><strong>Die Vorhersagen aller verbessern</strong> – wenn du es im Profil eingeschaltet lässt, fließen deine Touren in Mittelwerte pro Art über Gebiete von etwa 50 km ein. Nie deine Plätze, nie Koordinaten</li>
+      <li><strong>In der Zahl erscheinen, die andere sehen</strong> – wenn du es im Profil eingeschaltet lässt, zählen deine Touren in der Zahl mit, die andere bei ihren eigenen Plätzen sehen (wie viele Touren im Umkreis von 10 km und wie viele etwas gefunden haben). Kein Name, kein Ort, und die Zahl erscheint nur, wenn es mindestens drei Personen sind</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Fotos und Inhalte</div>
+    <ul>
+      <li><strong>Pilzfotos</strong> – freiwillig vom Nutzer hochgeladen, gespeichert auf Cloudflare R2 (Rechenzentren in der EU). Offline aufgenommene Fotos bleiben auf dem Gerät (IndexedDB), bis die Verbindung zurück ist</li>
+      <li>Fotos werden vor dem Hochladen komprimiert</li>
+      <li>Fotos sind standardmäßig nie öffentlich</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Werbung (nur kostenlose Version)</div>
+    <ul>
+      <li>Bei Nutzern der kostenlosen Version kann <strong>Google AdMob</strong> die <strong>Android-Werbe-ID</strong> und Nutzungsdaten erheben, um Werbung auszuliefern und zu messen</li>
+      <li>Du kannst die Werbe-ID unter Einstellungen → Google → Werbung zurücksetzen oder löschen. Nutzer mit Premium sehen keine Werbung</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Nutzungsdaten</div>
+    <ul>
+      <li>Anzahl der Funde, Touren, Abzeichen</li>
+      <li>Zusammengefasste Nutzungsstatistiken (nicht identifizierend)</li>
+      <li>Geräte-Token für Push-Benachrichtigungen (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📈 Anonyme Nutzungsstatistik (Firebase Analytics)</div>
+    <ul>
+      <li>Die App erhebt optional anonyme Nutzungsstatistiken über <strong>Firebase Analytics</strong> (Google LLC). Dazu gehören: besuchte Bildschirme, genutzte Funktionen, Gerätetyp, Betriebssystemversion und Land. GPS-Koordinaten, Fundorte, Fotos, Notizen oder andere persönliche Inhalte werden <strong>NIE</strong> erhoben</li>
+      <li>Die Erhebung ist <strong>standardmäßig eingeschaltet</strong>, lässt sich aber jederzeit unter <em>Einstellungen → „Anonyme Nutzungsstatistik“</em> ausschalten. Das Ausschalten wirkt sofort und dauerhaft</li>
+      <li>Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Die Einwilligung kann jederzeit über den Schalter in den Einstellungen widerrufen werden</li>
+    </ul>
+  </div>
+
+  <h2>3. Rechtsgrundlagen der Verarbeitung</h2>
+  <ul>
+    <li><strong>Vertragserfüllung</strong> (Art. 6 Abs. 1 lit. b DSGVO) – um die Funktionen der App bereitzustellen</li>
+    <li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO) – für Push-Benachrichtigungen, anonyme Nutzungsstatistik (Analytics) und personalisierte Werbung</li>
+    <li><strong>Berechtigtes Interesse</strong> (Art. 6 Abs. 1 lit. f DSGVO) – für Sicherheit und Missbrauchsverhinderung</li>
+  </ul>
+
+  <h2>4. Dienste Dritter</h2>
+  <p>MushScout nutzt folgende Dienste Dritter, jeweils mit eigener Datenschutzerklärung:</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Anmeldung, Push-Benachrichtigungen</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Firebase Analytics</strong>
+      <span>Anonyme Nutzungsstatistik (abschaltbar)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Werbung (kostenlose Version)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Anmeldung mit Google-Konto</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Artbestimmung aus Fotos</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudflare R2</strong>
+      <span>Speicherung der Fotos</span><br>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Wetterdaten vor Ort</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Hosting des Servers und der Datenbank</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Kartenkacheln</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Datenschutzerklärung →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Play Billing</strong>
+      <span>Verwaltung des Premium-Abos</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung →</a>
+    </div>
+  </div>
+
+  <h2>5. Speicherdauer</h2>
+  <ul>
+    <li>Kontodaten werden aufbewahrt, solange das Konto aktiv ist</li>
+    <li>Nach Löschung des Kontos werden alle personenbezogenen Daten innerhalb von <strong>30 Tagen</strong> gelöscht</li>
+    <li>Anonyme technische Protokolle können bis zu 90 Tage aufbewahrt werden</li>
+  </ul>
+
+  <h2>6. Übermittlung in Drittländer</h2>
+  <p>
+    Einige Anbieter (Google, Railway) können Daten außerhalb der EU übermitteln.
+    Solche Übermittlungen erfolgen auf Grundlage der von der Europäischen Kommission
+    genehmigten <strong>Standardvertragsklauseln</strong> oder gleichwertiger Mechanismen.
+  </p>
+
+  <h2>7. Deine Rechte (DSGVO)</h2>
+  <p>Als Einwohner der EU hast du das Recht auf:</p>
+  <ul>
+    <li><strong>Auskunft</strong> – eine Kopie deiner Daten erhalten</li>
+    <li><strong>Berichtigung</strong> – falsche Daten korrigieren</li>
+    <li><strong>Löschung</strong> – dein Konto und alle zugehörigen Daten löschen</li>
+    <li><strong>Datenübertragbarkeit</strong> – deine Daten als JSON oder CSV exportieren (im Profil verfügbar)</li>
+    <li><strong>Widerspruch</strong> – der Verarbeitung zu Marketingzwecken widersprechen</li>
+    <li><strong>Widerruf der Einwilligung</strong> – jederzeit, ohne dass die bisherige Verarbeitung davon berührt wird</li>
+  </ul>
+  <p>Um diese Rechte auszuüben: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+
+  <h2>8. Sicherheit</h2>
+  <p>
+    Daten werden über verschlüsselte HTTPS-Verbindungen übertragen. Passwörter werden nie
+    im Klartext gespeichert. Die Daten liegen auf Cloud-Infrastruktur mit branchenüblichen Sicherheitsmaßnahmen.
+  </p>
+
+  <h2>9. Kinder</h2>
+  <p>
+    MushScout richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten
+    von Minderjährigen. Wenn du ein Elternteil bist und glaubst, dass dein Kind ein Konto angelegt hat,
+    schreib uns, und wir löschen es sofort.
+  </p>
+
+  <h2>10. Änderungen dieser Erklärung</h2>
+  <p>
+    Änderungen werden auf dieser Seite mit neuem Datum veröffentlicht. Bei wesentlichen Änderungen
+    werden registrierte Nutzer per E-Mail informiert.
+  </p>
+  <p>
+    Maßgeblich ist die italienische Fassung dieser Erklärung: Übersetzungen dienen nur der
+    Verständlichkeit, und bei Abweichungen gilt der italienische Text.
+  </p>
+
+  <h2>11. Kontakt</h2>
+  <p>
+    Für alle Fragen: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
+  </p>
+
+</div>
 </main>
 
 <footer>
@@ -533,7 +728,7 @@
       el.classList.toggle('visible', el.dataset.lang === lang);
     });
     document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.includes(lang === 'it' ? '🇮🇹' : '🇬🇧'));
+      btn.classList.toggle('active', btn.dataset.l === lang);
     });
   }
 </script>

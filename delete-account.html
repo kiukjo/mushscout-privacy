@@ -148,8 +148,9 @@
   <div class="logo">Mush<span>Scout</span></div>
   <p>it.fungofind.app</p>
   <div class="lang-switch">
-    <button class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
-    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn active" data-l="it" onclick="setLang('it')">🇮🇹 Italiano</button>
+    <button class="lang-btn" data-l="en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" data-l="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
   </div>
 </header>
 
@@ -176,7 +177,7 @@
     </div>
     <div class="step">
       <div class="step-num">2</div>
-      <div>Vai su <strong>Profilo</strong> (icona in basso a destra)</div>
+      <div>Apri il <strong>Profilo</strong> (il tondo con la tua foto o le tue iniziali, in alto a destra nella Home)</div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
@@ -242,7 +243,7 @@
     </div>
     <div class="step">
       <div class="step-num">2</div>
-      <div>Go to <strong>Profile</strong> (bottom right icon)</div>
+      <div>Open your <strong>Profile</strong> (your picture or initials, top right on the Home screen)</div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
@@ -287,6 +288,72 @@
 
 </div>
 
+<!-- ═══════════════════ DEUTSCH ═══════════════════ -->
+<div data-lang="de">
+
+  <h1>🗑️ Konto löschen</h1>
+  <p>Du kannst dein MushScout-Konto und alle zugehörigen Daten jederzeit löschen. Die Löschung ist <strong>endgültig und nicht umkehrbar</strong>.</p>
+
+  <div class="warning">
+    <strong>⚠️ Achtung:</strong> Mit dem Löschen des Kontos werden alle deine Funde, Touren, Fotos, Abzeichen und persönlichen Daten endgültig entfernt. Das lässt sich nicht rückgängig machen.
+  </div>
+
+  <h2>Weg 1 – direkt in der App (empfohlen)</h2>
+
+  <div class="method primary">
+    <span class="badge fast">✅ Sofort</span>
+    <h3>In der MushScout-App löschen</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>Öffne MushScout auf deinem Gerät</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>Öffne das <strong>Profil</strong> (dein Bild oder deine Initialen oben rechts auf dem START-Bildschirm)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>Scrolle ganz nach unten und tippe auf <strong>„Konto löschen“</strong></div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>Bestätige deine Wahl im Dialog</div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div>Dein Konto und alle Daten werden sofort gelöscht</div>
+    </div>
+  </div>
+
+  <h2>Weg 2 – Anfrage per E-Mail</h2>
+
+  <div class="method">
+    <span class="badge email">📧 Innerhalb von 30 Tagen</span>
+    <h3>Den Support kontaktieren</h3>
+    <p>Wenn du keinen Zugang zur App hast, schick eine E-Mail an:</p>
+    <p><a href="mailto:biagioni.f@gmail.com?subject=Antrag%20auf%20Kontol%C3%B6schung&body=Hallo%2C%20ich%20m%C3%B6chte%20mein%20MushScout-Konto%20l%C3%B6schen.%0A%0AE-Mail-Adresse%20des%20Kontos%3A%20">📧 biagioni.f@gmail.com</a></p>
+    <p>Bitte gib an:</p>
+    <ul>
+      <li>die E-Mail-Adresse deines Kontos</li>
+      <li>dass du die vollständige Löschung deiner Daten wünschst</li>
+    </ul>
+    <p>Wir bearbeiten deine Anfrage innerhalb von <strong>30 Tagen</strong> nach Eingang.</p>
+  </div>
+
+  <h2>Gelöschte Daten</h2>
+  <p>Mit dem Löschen des Kontos werden entfernt:</p>
+  <ul>
+    <li>E-Mail-Adresse, Name, Profilfoto</li>
+    <li>Alle Pilzfunde und die zugehörigen Fotos</li>
+    <li>Sammeltouren und GPS-Spuren</li>
+    <li>Abzeichen und Statistiken</li>
+    <li>Daten zum Premium-Abo</li>
+  </ul>
+
+  <p>Mehr dazu in unserer <a href="https://kiukjo.github.io/mushscout-privacy/">Datenschutzerklärung</a>.</p>
+
+</div>
+
 </main>
 
 <footer>
@@ -299,7 +366,7 @@
       el.classList.toggle('visible', el.dataset.lang === lang);
     });
     document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.includes(lang === 'it' ? '🇮🇹' : '🇬🇧'));
+      btn.classList.toggle('active', btn.dataset.l === lang);
     });
   }
 </script>
