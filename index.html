@@ -41,6 +41,7 @@
     .lang-switch {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 8px;
       margin-top: 16px;
     }
@@ -138,6 +139,8 @@
     <button class="lang-btn active" data-l="it" onclick="setLang('it')">🇮🇹 Italiano</button>
     <button class="lang-btn" data-l="en" onclick="setLang('en')">🇬🇧 English</button>
     <button class="lang-btn" data-l="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
+    <button class="lang-btn" data-l="pl" onclick="setLang('pl')">🇵🇱 Polski</button>
+    <button class="lang-btn" data-l="cs" onclick="setLang('cs')">🇨🇿 Čeština</button>
   </div>
 </header>
 
@@ -716,6 +719,396 @@
   <h2>11. Kontakt</h2>
   <p>
     Für alle Fragen: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
+  </p>
+
+</div>
+
+<!-- ═══════════════════ POLSKI ═══════════════════ -->
+<!-- Tłumaczenie wersji angielskiej (paźdz. 2026). Wiążący jest tekst włoski. -->
+<div data-lang="pl">
+
+  <span class="updated">Ostatnia aktualizacja: 5 października 2026</span>
+
+  <h2>1. Administrator danych</h2>
+  <p>
+    Administratorem danych jest <strong>Federico Biagioni</strong>,
+    twórca aplikacji MushScout (<code>it.fungofind.app</code>).
+  </p>
+  <p>We wszystkich sprawach dotyczących prywatności: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+
+  <h2>2. Zbierane dane i cele</h2>
+  <p>MushScout zbiera następujące dane osobowe:</p>
+
+  <div class="card">
+    <div class="card-title">📧 Dane konta</div>
+    <ul>
+      <li><strong>Adres e-mail</strong> – do rejestracji i logowania</li>
+      <li><strong>Imię / nazwa użytkownika</strong> – do profilu</li>
+      <li><strong>Zdjęcie profilowe</strong> (opcjonalne) – dodane przez użytkownika</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Dane o lokalizacji</div>
+    <ul>
+      <li><strong>Dokładne współrzędne GPS</strong> – zapisywane przy każdym znalezisku</li>
+      <li><strong>Trasa GPS</strong> – zapisywana podczas wypraw na grzyby</li>
+      <li><strong>Obserwowane lasy</strong> – jeśli w „Przeanalizuj las” dotkniesz „Powiadom mnie, gdy ruszy”, zapisujemy nazwę i punkt tego lasu na potrzeby kalendarza i powiadomienia. Widzisz je tylko Ty; gdy przestaniesz go obserwować, zostają usunięte</li>
+      <li><strong>Lokalizacja w tle</strong> – podczas wyprawy rozpoczętej przez użytkownika aplikacja zapisuje ślad GPS także przy wyłączonym ekranie lub w tle, za pomocą <strong>usługi pierwszoplanowej ze stałym powiadomieniem</strong>. Na Androidzie wymaga to uprawnienia do lokalizacji „Zawsze”. Zapis działa tylko w trakcie aktywnej wyprawy</li>
+      <li>Lokalizacja służy <em>wyłącznie</em> do podstawowych funkcji aplikacji; <strong>tylko Ty widzisz</strong> swoje pozycje i znaleziska i nigdy nie są one przekazywane podmiotom trzecim w celach reklamowych. Inni użytkownicy widzą je tylko wtedy, gdy zdecydujesz się je udostępnić, w jeden z tych sposobów:</li>
+      <li><strong>Wyprawa ze znajomym</strong> – podczas wspólnej wyprawy osoba, którą zaprosisz (albo która zaprosi Ciebie), widzi na bieżąco Twoją pozycję, kierunek i liczbę znalezisk. Tylko ona i tylko w czasie wyprawy: po jej zakończeniu pozycje są usuwane z naszych serwerów</li>
+      <li><strong>Pożyczenie lasu</strong> – możesz pożyczyć znajomej osobie jeden ze swoich lasów: widzi nazwę, jaką ma u Ciebie, jego punkt na mapie i prognozę, <strong>nie</strong> Twoje znaleziska. Jeden las naraz; możesz go odebrać w każdej chwili (ta osoba też może go oddać), a wtedy pożyczka jest usuwana z naszych serwerów</li>
+      <li><strong>Lepsze prognozy dla wszystkich</strong> – jeśli zostawisz to włączone w Profilu, Twoje wyprawy trafiają do średnich dla gatunków w strefach ok. 50 km. Pomagają też ustalić, dla kwadratów ok. 2 km, czy dany grzyb tam rośnie: kwadrat mówi „rośnie” tylko wtedy, gdy ten grzyb zapisały tam co najmniej dwie różne osoby, a „nigdy” dopiero po co najmniej dziesięciu wyprawach co najmniej trzech osób bez znaleziska. Nigdy kto, nigdy ile, nigdy kiedy; nigdy Twoje miejsca, nigdy współrzędne. Kto analizuje las, nie wysyła punktu, tylko obszar ok. 20 km</li>
+      <li><strong>Udział w liczbie, którą widzą inni</strong> – jeśli zostawisz to włączone w Profilu, Twoje wyprawy wliczają się do liczby, którą inni widzą przy swoich miejscach (ile wypraw w promieniu 10 km i ile z nich coś znalazło). Bez nazwy, bez miejsca, a liczba pojawia się tylko wtedy, gdy osób jest co najmniej trzy</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Zdjęcia i treści</div>
+    <ul>
+      <li><strong>Zdjęcia grzybów</strong> – dodawane dobrowolnie przez użytkownika, przechowywane w Cloudflare R2 (centra danych w UE). Zdjęcia zrobione bez zasięgu zostają na urządzeniu (IndexedDB) do czasu powrotu połączenia</li>
+      <li>Zdjęcia są kompresowane przed wysłaniem</li>
+      <li>Zdjęcia domyślnie nigdy nie są publiczne</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Reklamy (tylko wersja darmowa)</div>
+    <ul>
+      <li>U użytkowników wersji darmowej <strong>Google AdMob</strong> może zbierać <strong>identyfikator reklamowy Androida</strong> i dane o korzystaniu z aplikacji, aby wyświetlać i mierzyć reklamy</li>
+      <li>Identyfikator reklamowy możesz zresetować lub usunąć w Ustawienia → Google → Reklamy. Użytkownicy Premium nie widzą reklam</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Dane o korzystaniu</div>
+    <ul>
+      <li>Liczba znalezisk, wypraw, odznak</li>
+      <li>Zbiorcze statystyki użytkowania (bez możliwości identyfikacji)</li>
+      <li>Token urządzenia do powiadomień push (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📈 Anonimowe statystyki użytkowania (Firebase Analytics)</div>
+    <ul>
+      <li>Aplikacja opcjonalnie zbiera anonimowe statystyki użytkowania przez <strong>Firebase Analytics</strong> (Google LLC). Obejmują one: odwiedzane ekrany, używane funkcje, typ urządzenia, wersję systemu i kraj. Współrzędne GPS, miejsca znalezisk, zdjęcia, notatki ani żadne inne treści osobiste <strong>NIGDY</strong> nie są zbierane</li>
+      <li>Zbieranie jest <strong>domyślnie włączone</strong>, ale można je w każdej chwili wyłączyć w <em>Ustawienia → „Anonimowe statystyki użytkowania”</em>. Wyłączenie działa od razu i na stałe</li>
+      <li>Podstawa prawna: zgoda (art. 6 ust. 1 lit. a RODO). Zgodę można w każdej chwili wycofać przełącznikiem w Ustawieniach</li>
+    </ul>
+  </div>
+
+  <h2>3. Podstawy prawne przetwarzania</h2>
+  <ul>
+    <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) – żeby zapewnić działanie aplikacji</li>
+    <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO) – na powiadomienia push, anonimowe statystyki (Analytics) i reklamy spersonalizowane</li>
+    <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) – bezpieczeństwo i zapobieganie nadużyciom</li>
+  </ul>
+
+  <h2>4. Usługi podmiotów trzecich</h2>
+  <p>MushScout korzysta z następujących usług podmiotów trzecich, z których każda ma własną politykę prywatności:</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Logowanie, powiadomienia push</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Firebase Analytics</strong>
+      <span>Anonimowe statystyki (można wyłączyć)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Reklamy (wersja darmowa)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Logowanie kontem Google</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Rozpoznawanie gatunków ze zdjęć</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudflare R2</strong>
+      <span>Przechowywanie zdjęć</span><br>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Lokalne dane pogodowe</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Hosting serwera i bazy danych</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Fragmenty map</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Polityka prywatności →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Play Billing</strong>
+      <span>Obsługa subskrypcji Premium</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności →</a>
+    </div>
+  </div>
+
+  <h2>5. Okres przechowywania</h2>
+  <ul>
+    <li>Dane konta przechowujemy, dopóki konto jest aktywne</li>
+    <li>Po usunięciu konta wszystkie dane osobowe są usuwane w ciągu <strong>30 dni</strong></li>
+    <li>Anonimowe logi techniczne mogą być przechowywane do 90 dni</li>
+  </ul>
+
+  <h2>6. Przekazywanie danych poza UE</h2>
+  <p>
+    Niektórzy dostawcy (Google, Railway) mogą przekazywać dane poza UE.
+    Odbywa się to na podstawie <strong>standardowych klauzul umownych</strong>
+    zatwierdzonych przez Komisję Europejską lub równoważnych mechanizmów.
+  </p>
+
+  <h2>7. Twoje prawa (RODO)</h2>
+  <p>Jeśli mieszkasz w UE, masz prawo do:</p>
+  <ul>
+    <li><strong>Dostępu</strong> – otrzymania kopii swoich danych</li>
+    <li><strong>Sprostowania</strong> – poprawienia błędnych danych</li>
+    <li><strong>Usunięcia</strong> – usunięcia konta i wszystkich powiązanych danych</li>
+    <li><strong>Przenoszenia danych</strong> – eksportu danych do JSON lub CSV (dostępnego w profilu)</li>
+    <li><strong>Sprzeciwu</strong> – wobec przetwarzania w celach marketingowych</li>
+    <li><strong>Wycofania zgody</strong> – w każdej chwili, bez wpływu na wcześniejsze przetwarzanie</li>
+  </ul>
+  <p>Aby skorzystać z tych praw: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+  <p>Jeśli mieszkasz w Szwajcarii, obowiązuje Cię też szwajcarska federalna ustawa o ochronie danych (FADP/nLPD), która daje Ci te same prawa.</p>
+
+  <h2>8. Bezpieczeństwo</h2>
+  <p>
+    Dane są przesyłane szyfrowanym połączeniem HTTPS. Hasła nigdy nie są przechowywane
+    jawnym tekstem. Dane są przechowywane w infrastrukturze chmurowej o standardowych zabezpieczeniach.
+  </p>
+
+  <h2>9. Dzieci</h2>
+  <p>
+    MushScout nie jest przeznaczony dla dzieci poniżej 13 lat. Świadomie nie zbieramy danych
+    osób niepełnoletnich. Jeśli jesteś rodzicem i uważasz, że Twoje dziecko założyło konto,
+    napisz do nas, a natychmiast je usuniemy.
+  </p>
+
+  <h2>10. Zmiany tej polityki</h2>
+  <p>
+    Zmiany publikujemy na tej stronie z nową datą. O istotnych zmianach
+    zarejestrowani użytkownicy zostaną poinformowani e-mailem.
+  </p>
+  <p>
+    Wiążąca jest włoska wersja tej polityki: tłumaczenia mają charakter pomocniczy,
+    a w razie rozbieżności rozstrzyga tekst włoski.
+  </p>
+
+  <h2>11. Kontakt</h2>
+  <p>
+    We wszystkich sprawach: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
+  </p>
+
+</div>
+
+<!-- ═══════════════════ ČEŠTINA ═══════════════════ -->
+<!-- Překlad anglické verze (říjen 2026). Závazný je italský text. -->
+<div data-lang="cs">
+
+  <span class="updated">Poslední aktualizace: 5. října 2026</span>
+
+  <h2>1. Správce údajů</h2>
+  <p>
+    Správcem údajů je <strong>Federico Biagioni</strong>,
+    vývojář aplikace MushScout (<code>it.fungofind.app</code>).
+  </p>
+  <p>Se všemi dotazy k ochraně soukromí: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+
+  <h2>2. Shromažďované údaje a účely</h2>
+  <p>MushScout shromažďuje tyto osobní údaje:</p>
+
+  <div class="card">
+    <div class="card-title">📧 Údaje o účtu</div>
+    <ul>
+      <li><strong>E-mailová adresa</strong> – pro registraci a přihlášení</li>
+      <li><strong>Jméno / uživatelské jméno</strong> – pro profil</li>
+      <li><strong>Profilová fotka</strong> (nepovinná) – nahraná uživatelem</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Údaje o poloze</div>
+    <ul>
+      <li><strong>Přesné souřadnice GPS</strong> – ukládané u každého nálezu</li>
+      <li><strong>Trasa GPS</strong> – zaznamenávaná během výprav na houby</li>
+      <li><strong>Sledované lesy</strong> – pokud v „Analyzovat les“ klepnete na „Dejte mi vědět, až to začne“, uložíme název a bod toho lesa pro kalendář a upozornění. Vidíte je jen vy; když ho přestanete sledovat, smažou se</li>
+      <li><strong>Poloha na pozadí</strong> – během výpravy spuštěné uživatelem aplikace zaznamenává stopu GPS i při vypnuté obrazovce nebo na pozadí, pomocí <strong>služby v popředí s trvalým oznámením</strong>. V Androidu to vyžaduje oprávnění k poloze „Vždy“. Záznam běží jen během aktivní výpravy</li>
+      <li>Poloha slouží <em>jen</em> pro základní funkce aplikace; <strong>své polohy a nálezy vidíte jen vy</strong> a nikdy se nepředávají třetím stranám pro reklamní účely. Ostatní uživatelé je uvidí jen tehdy, když se je rozhodnete sdílet, jedním z těchto způsobů:</li>
+      <li><strong>Výprava s přítelem</strong> – během společné výpravy vidí ten, koho pozvete (nebo kdo pozve vás), vaši polohu v reálném čase, směr a počet nálezů. Nikdo jiný, a jen po dobu výpravy: po jejím skončení se polohy z našich serverů smažou</li>
+      <li><strong>Zapůjčení lesa</strong> – jeden ze svých lesů můžete zapůjčit přátelům: uvidí název, pod kterým ho máte, jeho bod na mapě a předpověď, <strong>ne</strong> vaše nálezy. Vždy jeden les; můžete si ho kdykoli vzít zpět (i druhá strana ho může vrátit) a zapůjčení se pak z našich serverů smaže</li>
+      <li><strong>Lepší předpovědi pro všechny</strong> – pokud to necháte v Profilu zapnuté, vaše výpravy vstupují do průměrů pro jednotlivé druhy v oblastech kolem 50 km. Pomáhají také určit, ve čtvercích kolem 2 km, jestli tam daná houba roste: čtverec řekne „roste“ jen tehdy, když ji tam zapsali aspoň dva různí lidé, a „nikdy“ až po aspoň deseti výpravách aspoň tří lidí bez nálezu. Nikdy kdo, nikdy kolik, nikdy kdy; nikdy vaše místa, nikdy souřadnice. Kdo analyzuje les, neposílá bod, jen oblast kolem 20 km</li>
+      <li><strong>Započítání do čísla, které vidí ostatní</strong> – pokud to necháte v Profilu zapnuté, vaše výpravy se započítají do čísla, které ostatní vidí u svých míst (kolik výprav v okruhu 10 km a kolik z nich něco našlo). Bez jména, bez místa, a číslo se zobrazí jen tehdy, když jsou to aspoň tři lidé</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Fotky a obsah</div>
+    <ul>
+      <li><strong>Fotky hub</strong> – dobrovolně nahrané uživatelem, uložené v Cloudflare R2 (datová centra v EU). Fotky pořízené bez signálu zůstanou v zařízení (IndexedDB), dokud se nevrátí připojení</li>
+      <li>Fotky se před odesláním komprimují</li>
+      <li>Fotky nejsou ve výchozím stavu nikdy veřejné</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Reklama (jen bezplatná verze)</div>
+    <ul>
+      <li>U uživatelů bezplatné verze může <strong>Google AdMob</strong> shromažďovat <strong>reklamní ID Androidu</strong> a údaje o používání, aby mohl zobrazovat a měřit reklamy</li>
+      <li>Reklamní ID můžete obnovit nebo smazat v Nastavení → Google → Reklamy. Uživatelé Premium reklamy nevidí</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Údaje o používání</div>
+    <ul>
+      <li>Počet nálezů, výprav, odznaků</li>
+      <li>Souhrnné statistiky používání (bez možnosti identifikace)</li>
+      <li>Token zařízení pro push oznámení (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📈 Anonymní statistiky používání (Firebase Analytics)</div>
+    <ul>
+      <li>Aplikace volitelně shromažďuje anonymní statistiky používání přes <strong>Firebase Analytics</strong> (Google LLC). Patří k nim: navštívené obrazovky, používané funkce, typ zařízení, verze systému a země. Souřadnice GPS, místa nálezů, fotky, poznámky ani jiný osobní obsah se <strong>NIKDY</strong> neshromažďují</li>
+      <li>Sběr je <strong>ve výchozím stavu zapnutý</strong>, ale lze ho kdykoli vypnout v <em>Nastavení → „Anonymní statistiky používání“</em>. Vypnutí platí okamžitě a trvale</li>
+      <li>Právní základ: souhlas (čl. 6 odst. 1 písm. a GDPR). Souhlas lze kdykoli odvolat přepínačem v Nastavení</li>
+    </ul>
+  </div>
+
+  <h2>3. Právní základy zpracování</h2>
+  <ul>
+    <li><strong>Plnění smlouvy</strong> (čl. 6 odst. 1 písm. b GDPR) – pro fungování aplikace</li>
+    <li><strong>Souhlas</strong> (čl. 6 odst. 1 písm. a GDPR) – pro push oznámení, anonymní statistiky (Analytics) a personalizovanou reklamu</li>
+    <li><strong>Oprávněný zájem</strong> (čl. 6 odst. 1 písm. f GDPR) – pro bezpečnost a prevenci zneužití</li>
+  </ul>
+
+  <h2>4. Služby třetích stran</h2>
+  <p>MushScout používá tyto služby třetích stran, z nichž každá má vlastní zásady ochrany soukromí:</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Přihlášení, push oznámení</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Firebase Analytics</strong>
+      <span>Anonymní statistiky (lze vypnout)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Reklama (bezplatná verze)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Přihlášení účtem Google</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Rozpoznávání druhů z fotek</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudflare R2</strong>
+      <span>Ukládání fotek</span><br>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Místní údaje o počasí</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Hosting serveru a databáze</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Mapové dlaždice</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Play Billing</strong>
+      <span>Správa předplatného Premium</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Zásady ochrany soukromí →</a>
+    </div>
+  </div>
+
+  <h2>5. Doba uchovávání</h2>
+  <ul>
+    <li>Údaje o účtu uchováváme, dokud je účet aktivní</li>
+    <li>Po smazání účtu se všechny osobní údaje smažou do <strong>30 dnů</strong></li>
+    <li>Anonymní technické záznamy se mohou uchovávat až 90 dní</li>
+  </ul>
+
+  <h2>6. Předávání údajů mimo EU</h2>
+  <p>
+    Někteří poskytovatelé (Google, Railway) mohou předávat údaje mimo EU.
+    Děje se tak na základě <strong>standardních smluvních doložek</strong>
+    schválených Evropskou komisí nebo rovnocenných mechanismů.
+  </p>
+
+  <h2>7. Vaše práva (GDPR)</h2>
+  <p>Pokud žijete v EU, máte právo na:</p>
+  <ul>
+    <li><strong>Přístup</strong> – získat kopii svých údajů</li>
+    <li><strong>Opravu</strong> – opravit nesprávné údaje</li>
+    <li><strong>Výmaz</strong> – smazat účet a všechny související údaje</li>
+    <li><strong>Přenositelnost</strong> – exportovat údaje do JSON nebo CSV (v profilu)</li>
+    <li><strong>Námitku</strong> – proti zpracování pro marketingové účely</li>
+    <li><strong>Odvolání souhlasu</strong> – kdykoli, bez vlivu na předchozí zpracování</li>
+  </ul>
+  <p>Svá práva uplatníte na: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+  <p>Pokud žijete ve Švýcarsku, platí navíc švýcarský spolkový zákon o ochraně údajů (FADP/nDSG), který vám dává stejná práva.</p>
+
+  <h2>8. Zabezpečení</h2>
+  <p>
+    Údaje se přenášejí šifrovaným spojením HTTPS. Hesla se nikdy neukládají
+    jako prostý text. Údaje jsou uložené v cloudové infrastruktuře se standardním zabezpečením.
+  </p>
+
+  <h2>9. Děti</h2>
+  <p>
+    MushScout není určen dětem mladším 13 let. Vědomě neshromažďujeme údaje
+    nezletilých. Pokud jste rodič a myslíte si, že si vaše dítě vytvořilo účet,
+    napište nám a okamžitě ho smažeme.
+  </p>
+
+  <h2>10. Změny těchto zásad</h2>
+  <p>
+    Změny zveřejníme na této stránce s novým datem. O podstatných změnách
+    budou registrovaní uživatelé informováni e-mailem.
+  </p>
+  <p>
+    Závazná je italská verze těchto zásad: překlady slouží jen pro snazší porozumění
+    a v případě rozporu platí italský text.
+  </p>
+
+  <h2>11. Kontakt</h2>
+  <p>
+    Se všemi dotazy: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
   </p>
 
 </div>
