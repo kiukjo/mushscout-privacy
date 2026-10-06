@@ -141,6 +141,7 @@
     <button class="lang-btn" data-l="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
     <button class="lang-btn" data-l="pl" onclick="setLang('pl')">🇵🇱 Polski</button>
     <button class="lang-btn" data-l="cs" onclick="setLang('cs')">🇨🇿 Čeština</button>
+    <button class="lang-btn" data-l="fr" onclick="setLang('fr')">🇫🇷 Français</button>
   </div>
 </header>
 
@@ -1109,6 +1110,201 @@
   <h2>11. Kontakt</h2>
   <p>
     Se všemi dotazy: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
+  </p>
+
+</div>
+
+<!-- ═══════════════════ FRANÇAIS ═══════════════════ -->
+<!-- Traduction de la version anglaise (oct. 2026). Le texte italien fait foi. -->
+<div data-lang="fr">
+
+  <span class="updated">Dernière mise à jour : 5 octobre 2026</span>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>
+    Le responsable du traitement est <strong>Federico Biagioni</strong>,
+    développeur de l’application MushScout (<code>it.fungofind.app</code>).
+  </p>
+  <p>Pour toute demande concernant la confidentialité : <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+
+  <h2>2. Données collectées et finalités</h2>
+  <p>MushScout collecte les données personnelles suivantes :</p>
+
+  <div class="card">
+    <div class="card-title">📧 Données du compte</div>
+    <ul>
+      <li><strong>Adresse e-mail</strong> : pour l’inscription et la connexion</li>
+      <li><strong>Nom / nom d’utilisateur</strong> : pour le profil</li>
+      <li><strong>Photo de profil</strong> (facultative) : envoyée par l’utilisateur</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Données de localisation</div>
+    <ul>
+      <li><strong>Coordonnées GPS précises</strong> : enregistrées avec chaque trouvaille</li>
+      <li><strong>Parcours GPS</strong> : enregistré pendant les sorties</li>
+      <li><strong>Bois que vous suivez</strong> : si, dans « Analyser un bois », vous touchez « Prévenez-moi quand ça pousse », nous enregistrons le nom et le point de ce bois pour le calendrier et l’alerte. Personne d’autre que vous n’y a accès ; quand vous arrêtez de le suivre, ils sont supprimés</li>
+      <li><strong>Localisation en arrière-plan</strong> : pendant une sortie lancée par l’utilisateur, l’app enregistre la trace GPS même écran éteint ou en arrière-plan, au moyen d’un <strong>service de premier plan avec une notification permanente</strong>. Sous Android, cela demande l’autorisation de localisation « Toujours ». L’enregistrement n’est actif que pendant une sortie en cours</li>
+      <li>La localisation sert <em>uniquement</em> aux fonctions principales de l’app ; <strong>personne d’autre que vous ne voit</strong> vos positions et vos trouvailles, et elles ne sont jamais transmises à des tiers à des fins publicitaires. Les autres utilisateurs ne les voient que si vous les partagez de l’une de ces façons :</li>
+      <li><strong>Sortie avec un ami</strong> : pendant une sortie à deux, l’ami que vous avez invité (ou qui vous a envoyé l’invitation) voit votre position en temps réel, votre direction et le nombre de vos trouvailles. Lui seul, et seulement pendant la sortie : quand elle se termine, les positions sont supprimées de nos serveurs</li>
+      <li><strong>Prêter un bois</strong> : vous pouvez prêter l’un de vos bois à un ami : il voit le nom que vous lui avez donné, son point sur la carte et sa prévision, <strong>pas</strong> vos trouvailles. Un bois à la fois ; vous pouvez le reprendre quand vous voulez (votre ami aussi), et le prêt est alors supprimé de nos serveurs</li>
+      <li><strong>Améliorer les prévisions de tous</strong> : si vous laissez l’option activée dans le Profil, vos sorties entrent dans des moyennes par espèce sur des zones d’environ 50 km. Elles aident aussi à dire si un champignon pousse dans des carrés d’environ 2 km : un carré dit « ça pousse » seulement si le champignon y a été noté par au moins deux personnes différentes, et « jamais » seulement après au moins dix sorties sans trouvaille d’au moins trois personnes. Jamais qui, jamais combien, jamais quand ; jamais vos coins, jamais de coordonnées. Qui analyse un bois n’envoie pas le point, seulement une zone d’environ 20 km</li>
+      <li><strong>Apparaître dans le compte que voient les autres</strong> : si vous laissez l’option activée dans le Profil, vos sorties comptent dans le chiffre que les autres voient pour leurs propres coins (combien de sorties dans un rayon de 10 km et combien ont trouvé quelque chose). Ni nom ni lieu, et le chiffre n’apparaît qu’à partir de trois personnes</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Photos et contenus</div>
+    <ul>
+      <li><strong>Photos de champignons</strong> : envoyées volontairement par l’utilisateur, stockées sur Cloudflare R2 (centres de données dans l’UE). Les photos prises hors ligne restent sur l’appareil (IndexedDB) jusqu’au retour de la connexion</li>
+      <li>Les photos sont compressées avant l’envoi</li>
+      <li>Par défaut, les photos ne sont jamais publiques</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Publicité (version gratuite uniquement)</div>
+    <ul>
+      <li>Pour les utilisateurs de la version gratuite, <strong>Google AdMob</strong> peut collecter l’<strong>identifiant publicitaire Android</strong> et des données d’utilisation pour diffuser et mesurer les publicités</li>
+      <li>Vous pouvez réinitialiser ou supprimer l’identifiant publicitaire dans Paramètres → Google → Annonces. Les utilisateurs Premium ne voient pas de publicité</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Données d’utilisation</div>
+    <ul>
+      <li>Nombre de trouvailles, de sorties, de badges</li>
+      <li>Statistiques d’utilisation agrégées (non identifiantes)</li>
+      <li>Jeton de l’appareil pour les notifications push (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📈 Statistiques d’utilisation anonymes (Firebase Analytics)</div>
+    <ul>
+      <li>L’app collecte, de façon facultative, des statistiques d’utilisation anonymes via <strong>Firebase Analytics</strong> (Google LLC) : écrans visités, fonctions utilisées, type d’appareil, version du système et pays. Les coordonnées GPS, les lieux des trouvailles, les photos, les notes et tout autre contenu personnel ne sont <strong>JAMAIS</strong> collectés</li>
+      <li>La collecte est <strong>activée par défaut</strong>, mais vous pouvez la désactiver à tout moment dans <em>Paramètres → « Statistiques d’utilisation anonymes »</em>. La désactivation est immédiate et définitive</li>
+      <li>Base légale : consentement (art. 6, paragraphe 1, point a du RGPD). Vous pouvez retirer votre consentement à tout moment avec l’interrupteur des paramètres</li>
+    </ul>
+  </div>
+
+  <h2>3. Bases légales du traitement</h2>
+  <ul>
+    <li><strong>Exécution du contrat</strong> (art. 6, paragraphe 1, point b du RGPD) : pour fournir les fonctions de l’app</li>
+    <li><strong>Consentement</strong> (art. 6, paragraphe 1, point a du RGPD) : pour les notifications push, les statistiques d’utilisation anonymes (Analytics) et la publicité personnalisée</li>
+    <li><strong>Intérêt légitime</strong> (art. 6, paragraphe 1, point f du RGPD) : pour la sécurité et la prévention des abus</li>
+  </ul>
+
+  <h2>4. Services tiers</h2>
+  <p>MushScout utilise les services tiers suivants, chacun avec sa propre politique de confidentialité :</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Connexion, notifications push</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Firebase Analytics</strong>
+      <span>Statistiques d’utilisation anonymes (désactivables)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Publicité (version gratuite)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Connexion avec un compte Google</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Identification des espèces à partir des photos</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudflare R2</strong>
+      <span>Stockage des photos</span><br>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Données météo locales</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Hébergement du serveur et de la base de données</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Tuiles de carte</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Politique de confidentialité →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Play Billing</strong>
+      <span>Gestion de l’abonnement Premium</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité →</a>
+    </div>
+  </div>
+
+  <h2>5. Durée de conservation</h2>
+  <ul>
+    <li>Les données du compte sont conservées tant que le compte est actif</li>
+    <li>Après la suppression du compte, toutes les données personnelles sont effacées sous <strong>30 jours</strong></li>
+    <li>Les journaux techniques anonymes peuvent être conservés jusqu’à 90 jours</li>
+  </ul>
+
+  <h2>6. Transferts hors de l’UE</h2>
+  <p>
+    Certains prestataires (Google, Railway) peuvent transférer des données hors de l’UE.
+    Ces transferts reposent sur les <strong>clauses contractuelles types</strong> approuvées
+    par la Commission européenne ou sur des mécanismes équivalents.
+  </p>
+
+  <h2>7. Vos droits (RGPD)</h2>
+  <p>Si vous résidez dans l’UE, vous avez le droit de :</p>
+  <ul>
+    <li><strong>Accès</strong> : obtenir une copie de vos données</li>
+    <li><strong>Rectification</strong> : corriger des données inexactes</li>
+    <li><strong>Effacement</strong> : supprimer votre compte et toutes les données associées</li>
+    <li><strong>Portabilité</strong> : exporter vos données en JSON ou en CSV (disponible dans le Profil)</li>
+    <li><strong>Opposition</strong> : vous opposer au traitement à des fins de marketing</li>
+    <li><strong>Retrait du consentement</strong> : à tout moment, sans remettre en cause le traitement déjà effectué</li>
+  </ul>
+  <p>Pour exercer ces droits : <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+  <p>Si vous vivez en Suisse, la loi fédérale sur la protection des données (LPD) s’applique aussi et vous donne les mêmes droits.</p>
+
+  <h2>8. Sécurité</h2>
+  <p>
+    Les données sont transmises par des connexions HTTPS chiffrées. Les mots de passe ne sont jamais
+    enregistrés en clair. Les données sont hébergées sur une infrastructure cloud dotée des mesures de sécurité standard du secteur.
+  </p>
+
+  <h2>9. Enfants</h2>
+  <p>
+    MushScout ne s’adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données
+    de mineurs. Si vous êtes parent et pensez que votre enfant a créé un compte,
+    écrivez-nous et nous le supprimerons immédiatement.
+  </p>
+
+  <h2>10. Modifications de cette politique</h2>
+  <p>
+    Les modifications sont publiées sur cette page avec une nouvelle date. En cas de modification importante,
+    les utilisateurs inscrits sont prévenus par e-mail.
+  </p>
+  <p>
+    La version italienne de cette politique fait foi : les traductions ne servent qu’à la
+    compréhension et, en cas de divergence, le texte italien prévaut.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    Pour toute question : <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
   </p>
 
 </div>
