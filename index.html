@@ -142,6 +142,7 @@
     <button class="lang-btn" data-l="pl" onclick="setLang('pl')">🇵🇱 Polski</button>
     <button class="lang-btn" data-l="cs" onclick="setLang('cs')">🇨🇿 Čeština</button>
     <button class="lang-btn" data-l="fr" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button class="lang-btn" data-l="es" onclick="setLang('es')">🇪🇸 Español</button>
   </div>
 </header>
 
@@ -1305,6 +1306,201 @@
   <h2>11. Contact</h2>
   <p>
     Pour toute question : <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
+  </p>
+
+</div>
+
+<!-- ═══════════════════ ESPAÑOL ═══════════════════ -->
+<!-- Traducción de la versión francesa e inglesa (oct. 2026). Prevalece el texto italiano. -->
+<div data-lang="es">
+
+  <span class="updated">Última actualización: 10 de octubre de 2026</span>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>
+    El responsable del tratamiento es <strong>Federico Biagioni</strong>,
+    desarrollador de la aplicación MushScout (<code>it.fungofind.app</code>).
+  </p>
+  <p>Para cualquier consulta sobre privacidad: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+
+  <h2>2. Datos que recogemos y para qué</h2>
+  <p>MushScout recoge los siguientes datos personales:</p>
+
+  <div class="card">
+    <div class="card-title">📧 Datos de la cuenta</div>
+    <ul>
+      <li><strong>Correo electrónico</strong>: para el registro y el acceso</li>
+      <li><strong>Nombre / nombre de usuario</strong>: para el perfil</li>
+      <li><strong>Foto de perfil</strong> (opcional): la sube el usuario</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📍 Datos de ubicación</div>
+    <ul>
+      <li><strong>Coordenadas GPS precisas</strong>: se guardan con cada hallazgo</li>
+      <li><strong>Recorrido GPS</strong>: se graba durante las salidas</li>
+      <li><strong>Bosques que sigues</strong>: si en «Analizar un bosque» tocas «Avísame cuando salgan», guardamos el nombre y el punto de ese bosque para el calendario y el aviso. Nadie más que tú tiene acceso a ellos; cuando dejas de seguirlo, se borran</li>
+      <li><strong>Ubicación en segundo plano</strong>: durante una salida iniciada por el usuario, la app graba el recorrido GPS también con la pantalla apagada o en segundo plano, mediante un <strong>servicio en primer plano con una notificación permanente</strong>. En Android esto requiere el permiso de ubicación «Permitir siempre». La grabación solo está activa durante una salida en curso</li>
+      <li>La ubicación se usa <em>solo</em> para las funciones principales de la app; <strong>nadie más que tú ve</strong> tus posiciones y tus hallazgos, y nunca se ceden a terceros con fines publicitarios. Los demás usuarios solo los ven si los compartes de alguna de estas formas:</li>
+      <li><strong>Salir con un amigo</strong>: durante una salida compartida, el amigo al que has invitado (o que te ha invitado) ve tu posición en tiempo real, tu dirección y el número de tus hallazgos. Solo esa persona, y solo durante la salida: cuando termina, las posiciones se borran de nuestros servidores</li>
+      <li><strong>Prestar un bosque</strong>: puedes prestar uno de tus bosques a un amigo: ve el nombre que le has dado, su punto en el mapa y su previsión, <strong>no</strong> tus hallazgos. Un bosque cada vez; puedes recuperarlo cuando quieras (y tu amigo también puede devolverlo), y entonces el préstamo se borra de nuestros servidores</li>
+      <li><strong>Mejorar las previsiones de todos</strong>: si dejas la opción activada en el Perfil, tus salidas entran en medias por especie sobre zonas de unos 50 km. También ayudan a saber si una seta sale en cuadrados de unos 2 km: un cuadrado dice «sale» solo si la seta la han anotado allí al menos dos personas distintas, y «nunca» solo después de al menos diez salidas sin hallazgos de al menos tres personas. Nunca quién, nunca cuántas, nunca cuándo; nunca tus sitios, nunca coordenadas. Quien analiza un bosque no envía el punto, solo una zona de unos 20 km</li>
+      <li><strong>Aparecer en el recuento que ven los demás</strong>: si dejas la opción activada en el Perfil, tus salidas cuentan en el número que otras personas ven en sus propios sitios (cuántas salidas en un radio de 10 km y cuántas han encontrado algo). Ni nombre ni lugar, y el número solo aparece a partir de tres personas</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📸 Fotos y contenidos</div>
+    <ul>
+      <li><strong>Fotos de setas</strong>: las sube voluntariamente el usuario y se guardan en Cloudflare R2 (centros de datos en la UE). Las fotos hechas sin conexión se quedan en el dispositivo (IndexedDB) hasta que vuelve la conexión</li>
+      <li>Las fotos se comprimen antes de enviarlas</li>
+      <li>Por defecto, las fotos nunca son públicas</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📢 Publicidad (solo en la versión gratuita)</div>
+    <ul>
+      <li>En la versión gratuita, <strong>Google AdMob</strong> puede recoger el <strong>identificador de publicidad de Android</strong> y datos de uso para mostrar y medir los anuncios</li>
+      <li>Puedes restablecer o eliminar el identificador de publicidad en Ajustes → Google → Anuncios. Quien tiene Premium no ve publicidad</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Datos de uso</div>
+    <ul>
+      <li>Número de hallazgos, de salidas y de insignias</li>
+      <li>Estadísticas de uso agregadas (que no identifican a nadie)</li>
+      <li>Token del dispositivo para las notificaciones push (Firebase Cloud Messaging)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📈 Estadísticas de uso anónimas (Firebase Analytics)</div>
+    <ul>
+      <li>La app recoge, de forma opcional, estadísticas de uso anónimas mediante <strong>Firebase Analytics</strong> (Google LLC): pantallas visitadas, funciones usadas, tipo de dispositivo, versión del sistema y país. Las coordenadas GPS, los lugares de los hallazgos, las fotos, las notas y cualquier otro contenido personal <strong>NUNCA</strong> se recogen</li>
+      <li>La recogida está <strong>activada por defecto</strong>, pero puedes desactivarla cuando quieras en <em>Ajustes → «Estadísticas de uso anónimas»</em>. La desactivación es inmediata y definitiva</li>
+      <li>Base legal: consentimiento (art. 6, apartado 1, letra a del RGPD). Puedes retirar el consentimiento cuando quieras con el interruptor de los ajustes</li>
+    </ul>
+  </div>
+
+  <h2>3. Bases legales del tratamiento</h2>
+  <ul>
+    <li><strong>Ejecución del contrato</strong> (art. 6, apartado 1, letra b del RGPD): para ofrecer las funciones de la app</li>
+    <li><strong>Consentimiento</strong> (art. 6, apartado 1, letra a del RGPD): para las notificaciones push, las estadísticas de uso anónimas (Analytics) y la publicidad personalizada</li>
+    <li><strong>Interés legítimo</strong> (art. 6, apartado 1, letra f del RGPD): para la seguridad y la prevención de abusos</li>
+  </ul>
+
+  <h2>4. Servicios de terceros</h2>
+  <p>MushScout usa los siguientes servicios de terceros, cada uno con su propia política de privacidad:</p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <strong>Google Firebase</strong>
+      <span>Acceso, notificaciones push</span><br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Firebase Analytics</strong>
+      <span>Estadísticas de uso anónimas (desactivables)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google AdMob</strong>
+      <span>Publicidad (versión gratuita)</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Sign-In</strong>
+      <span>Acceso con una cuenta de Google</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Gemini AI</strong>
+      <span>Identificación de especies a partir de fotos</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Cloudflare R2</strong>
+      <span>Almacenamiento de las fotos</span><br>
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>OpenWeatherMap</strong>
+      <span>Datos del tiempo local</span><br>
+      <a href="https://openweathermap.org/privacy-policy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Railway</strong>
+      <span>Alojamiento del servidor y de la base de datos</span><br>
+      <a href="https://railway.app/legal/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>ESRI / OpenStreetMap</strong>
+      <span>Teselas del mapa</span><br>
+      <a href="https://www.esri.com/en-us/privacy/overview" target="_blank">Política de privacidad →</a>
+    </div>
+    <div class="service-card">
+      <strong>Google Play Billing</strong>
+      <span>Gestión de la suscripción Premium</span><br>
+      <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad →</a>
+    </div>
+  </div>
+
+  <h2>5. Plazo de conservación</h2>
+  <ul>
+    <li>Los datos de la cuenta se conservan mientras la cuenta esté activa</li>
+    <li>Después de eliminar la cuenta, todos los datos personales se borran en un plazo de <strong>30 días</strong></li>
+    <li>Los registros técnicos anónimos pueden conservarse hasta 90 días</li>
+  </ul>
+
+  <h2>6. Transferencias fuera de la UE</h2>
+  <p>
+    Algunos proveedores (Google, Railway) pueden transferir datos fuera de la UE.
+    Estas transferencias se basan en las <strong>cláusulas contractuales tipo</strong> aprobadas
+    por la Comisión Europea o en mecanismos equivalentes.
+  </p>
+
+  <h2>7. Tus derechos (RGPD)</h2>
+  <p>Si resides en la UE, de acuerdo con el RGPD y, en España, con la Ley Orgánica 3/2018 (LOPDGDD), tienes derecho a:</p>
+  <ul>
+    <li><strong>Acceso</strong>: obtener una copia de tus datos</li>
+    <li><strong>Rectificación</strong>: corregir datos inexactos</li>
+    <li><strong>Supresión</strong>: eliminar tu cuenta y todos los datos asociados</li>
+    <li><strong>Portabilidad</strong>: exportar tus datos en JSON o CSV (disponible en el Perfil)</li>
+    <li><strong>Oposición</strong>: oponerte al tratamiento con fines de marketing</li>
+    <li><strong>Retirada del consentimiento</strong>: en cualquier momento, sin que afecte al tratamiento ya realizado</li>
+  </ul>
+  <p>Para ejercer estos derechos: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a></p>
+  <p>Si crees que no hemos tratado bien tus datos, también puedes presentar una reclamación ante la autoridad de protección de datos de tu país; en España es la <a href="https://www.aepd.es" target="_blank">Agencia Española de Protección de Datos (AEPD)</a>.</p>
+
+  <h2>8. Seguridad</h2>
+  <p>
+    Los datos se transmiten por conexiones HTTPS cifradas. Las contraseñas nunca se guardan
+    en claro. Los datos se alojan en una infraestructura en la nube con las medidas de seguridad habituales del sector.
+  </p>
+
+  <h2>9. Menores</h2>
+  <p>
+    MushScout no está dirigida a menores de 13 años. No recogemos a sabiendas datos
+    de menores. Si eres madre, padre o tutor y crees que tu hijo o hija ha creado una cuenta,
+    escríbenos y la eliminaremos de inmediato.
+  </p>
+
+  <h2>10. Cambios en esta política</h2>
+  <p>
+    Los cambios se publican en esta página con una fecha nueva. Si hay cambios importantes,
+    avisamos por correo electrónico a los usuarios registrados.
+  </p>
+  <p>
+    La versión en italiano de esta política es la que tiene valor: las traducciones sirven solo para
+    facilitar la comprensión y, si hay diferencias, prevalece el texto italiano.
+  </p>
+
+  <h2>11. Contacto</h2>
+  <p>
+    Para cualquier pregunta: <a href="mailto:biagioni.f@gmail.com">biagioni.f@gmail.com</a>
   </p>
 
 </div>
